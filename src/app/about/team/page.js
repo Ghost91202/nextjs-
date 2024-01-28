@@ -1,8 +1,12 @@
 
 
+import NavBar from "@/components/navbar"
 const page = () => {
   return (
-    <div>team </div>
+    <div>
+      <NavBar />
+      Team
+     </div>
   )
 }
 
