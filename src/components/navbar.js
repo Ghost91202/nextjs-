@@ -1,75 +1,55 @@
 'use client';
+import { FaGripLines } from "react-icons/fa";
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-
+import "./navbar.css"
 function NavBar() {
-  const [navbar, setNavbar] = useState(false);
+  const [ navbar, setNavbar ] = useState( false );
   return (
-    <div>
-      <nav className="w-full bg-black sticky top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* LOGO */}
-              <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
-              </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
-                  ) : (
-                    <Image
-                      src="/hamburger-menu.svg"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
-                  )}
-                </button>
-              </div>
+    <>
+      <div className="flex w-screen p-4 pt-6 justify-between">
+        <div className="">
+          <h1>Logo</h1>
+        </div>
+        <div className="flex  pr-20 g justify-between">
+          <div className="grid grid-flow-cols  gap-5 grid-cols-2">
+            <div className="grid grid-flow-cols grid-cols-2 gap-5 p-2   items-center rounded-lg text-white bg-black justify-between">
+              <h1>
+                hello1
+              </h1>
+              <h1>
+                hello2
+              </h1>
+            </div>
+            <div className="rounded-lg flex justify-center items-center text-white bg-cyan-500">
+              <h1>
+                hello3
+              </h1>
             </div>
           </div>
           <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
-            >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/about" onClick={() => setNavbar(!navbar)}>
-                    About
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="/blog" onClick={() => setNavbar(!navbar)}>
-                    Blogs
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Projects
-                  </Link>
-                </li>
+            <input type="checkbox" id="active" />
+            <label htmlFor="active" className="menu-btn">
+              <i className="fas fa-bars"></i>
+            </label>
+            <div className="wrapper">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Feedback</a></li>
               </ul>
             </div>
+
           </div>
         </div>
-      </nav>
-    </div>
+
+      </div>
+
+    </>
   );
 }
 
