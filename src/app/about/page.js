@@ -1,6 +1,6 @@
 
 'use client';
-import Navbar from "../../components/navbar"
+import Navbar from "../../components/navbar/navbar"
 import Link from 'next/link';
 
 export default function about() {

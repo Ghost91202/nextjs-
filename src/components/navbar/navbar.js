@@ -9,9 +9,9 @@ function NavBar() {
   const [ navbar, setNavbar ] = useState( false );
   return (
     <>
-      <div className="flex w-screen p-4 pt-6 justify-between">
+      <div className="flex fixed z-50 w-screen p-4 pt-6 justify-between">
         <div className="">
-          <h1>Logo</h1>
+          <h1 className="text-4xl font-bold text-white">Logo</h1>
         </div>
         <div className="flex  pr-20 g justify-between">
           <div className="grid grid-flow-cols  gap-5 grid-cols-2">
@@ -32,7 +32,7 @@ function NavBar() {
           <div>
             <input type="checkbox" id="active" />
             <label htmlFor="active" className="menu-btn">
-              <i className="fas fa-bars"></i>
+              <i className="fas fa-bars flex justify-center items-center mt-4"><FaGripLines/> </i>
             </label>
             <div className="wrapper">
               <ul>

@@ -1,6 +1,6 @@
 
 
-import NavBar from "@/components/navbar"
+import NavBar from "@/components/navbar/navbar"
 const page = () => {
   return (
     <div>
