@@ -1,13 +1,20 @@
+"use client";
 
+import React, { useState } from 'react';
+import styles from '../../styles/counter.module.css';
 
+export default function Counter() {
+  const [ count, setCount ] = useState( 0 );
 
-import Navbar from "../../components/navbar/navbar"
-export default function blog() {
+  const incrementCount = () => setCount( count + 1 );
+  const decrementCount = () => setCount( Math.max( 0, count - 1 ) ); // Prevent negative values
+
   return (
-    <div className="bg-white text-black">
-      <Navbar />
-      <div className="text-2xl">
-        blog
-     </div> </div>
-  )
+    <div className={styles.counter}>
+      <h1 className="text-black">Counter</h1>
+      <p>Current count: {count}</p>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
+    </div>
+  );
 }
