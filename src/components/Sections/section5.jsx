@@ -1,5 +1,7 @@
 import Image from "next/image";
-
+import sec5 from "../../assets/sec5.avif"
+import sec52 from "../../assets/sec52.avif"
+import sec53 from "../../assets/sec53.avif"
 export default function section5() {
     return (
         <div className="flex  p-10 gap-44  h-screen">
@@ -14,7 +16,7 @@ export default function section5() {
             </div>
             <div className="flex gap-10">
                 <div>
-                    <Image src="https://images.unsplash.com/photo-1610135241972-2086ecaf65d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHR1cmlzbXxlbnwwfHwwfHx8MA%3D%3D" alt="vistaCraze" className=" h-96 rounded-lg" />
+                    <Image src={sec53} alt="vistaCraze" className=" h-96 rounded-lg" />
                     <div className=" flex flex-col font-extrabold pl-2 mb-20 absolute z-10 text-white lg:text-6xl justify-end ">
                 <div className="absolute">
                     <h1>T </h1>
@@ -29,7 +31,7 @@ export default function section5() {
             </div>
                 </div>
                 <div>
-                    <Image src="https://images.unsplash.com/photo-1578825056472-abefb9de989f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="vistaCraze" className=" h-3/4 w-72 rounded-lg" />
+                    <Image src={sec52} alt="vistaCraze" className=" h-3/4 w-72 rounded-lg" />
                     <div className=" flex flex-col font-extrabold pl-2 mb-20 absolute z-10 text-white lg:text-6xl justify-end ">
                 <div className="absolute">
                     <h1>L </h1>
@@ -43,7 +45,7 @@ export default function section5() {
             </div>
                 </div>
                 <div>
-                    <Image src="https://images.unsplash.com/photo-1615147990135-2c4ccb0876e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" alt="vistaCraze" className=" h-full w-72 rounded-lg" />
+                    <Image src={sec5} alt="vistaCraze" className=" h-full w-72 rounded-lg" />
                     <div className=" flex flex-col font-extrabold pl-2 mb-20 absolute z-10 text-white lg:text-6xl justify-end ">
                 <div className="absolute">
                     <h1>G </h1>

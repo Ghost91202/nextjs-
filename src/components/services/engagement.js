@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Engagement from "../../assets/engagement.avif"
 
 export default function engagement( params ) {
     return (
@@ -12,8 +12,9 @@ export default function engagement( params ) {
                     <p className="w-3/4">You can partner with Pie-bond to get solutions tailored specially for your unique needs. Are you a CEO or Marketing Manager looking to increase your brand’s digital footprint or a start-up looking for consultation? We have got you covered in our dynamic SEO Engagement Models.
                     </p>
                 </div>
-                <Image src="https://images.unsplash.com/photo-1584583528653-966964d48bf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGJ1aWxkaW5ncyUyMDklM0ExNnxlbnwwfHwwfHx8MA%3D%3D" alt="" className="
-                  rounded-2xl w-full lg:h-96 " />
+                <Image src={Engagement} alt="pie-bond" className="
+                  rounded-2xl w-full lg:h-96 "  width={500}
+      height={500}/>
 
 
                 </div>

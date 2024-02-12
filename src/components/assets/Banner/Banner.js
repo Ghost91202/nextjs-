@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "../Buttons/Button"
+import Banner1 from "../../../assets/Banner1.avif"
 export default function Banner( params ) {
     return (
         <div className="lg:h-screen lg:overflow-hidden w-screen mb-10 p-5">
@@ -13,7 +14,7 @@ export default function Banner( params ) {
 
                 </div>
                 <div className="p-10">
-                    <Image src="https://images.unsplash.com/photo-1586503239303-0e501a7bd145?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGJ1aWxkaW5ncyUyMDklM0ExNnxlbnwwfHwwfHx8MA%3D%3D " alt="pie-bond digital marketing agency" className="lg:h-full  rounded-xl" />
+                    <Image src={Banner1} alt="pie-bond digital marketing agency" className="lg:h-full  rounded-xl" />
                 </div>
             </div>
         </div>
