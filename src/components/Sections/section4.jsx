@@ -9,7 +9,7 @@ export default function section4() {
     return (
         <div className="p-3 -mt-10 relative">
              <div className=" p-5 relative z-10 ">
-                <div className=" absolute rounded-xl mt-10  left-1/2  flex flex-col gap-5 bg-cyan-500 p-5 w-1/2   text-white h-auto  z-5">
+                <div className=" absolute rounded-xl mt-10  lg:left-1/2  flex flex-col gap-5 bg-cyan-500 p-5 lg:w-1/2 w-full   text-white h-auto  z-5">
                     <div className="lg:text-6xl flex  font-extrabold ">
                         <h1 ClassName=" flex flex-row  text-xl">FOR BUSINESS<BsArrowUpRight className="text-white hidden"/>
                         </h1>

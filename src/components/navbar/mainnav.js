@@ -13,16 +13,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="  relative z-50">
       <div className={`menu-toggle ${ isMenuOpen ? 'open' : '' }`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-between pl-4 pr-10 text-black p-4">
+        <div className="flex gap-20 bg-white justify-between  text-black p-6">
           <div>
-            <h1>logo</h1>
+            <h1 className="lg:text-4xl"><span className="text-cyan-500">Pie</span><span className=" text-yellow-400">-</span>Bond</h1>
           </div>
           <div className="flex gap-4 bg-white text-black">
             <li>
@@ -58,12 +58,12 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-           <Link href="/BLOGS">BLOGS</Link>
-           <Link href="/CONTACT">CONTACT</Link>
+            <Link href="/BLOGS">BLOGS</Link>
+            <Link href="/CONTACT">CONTACT</Link>
           </div>
         </div>
       </ul>
-  <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
+      <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
         <div className="flex gap-20 bg-white justify-center text-black p-4">
 
           <div className="flex gap-4 bg-white text-black">
