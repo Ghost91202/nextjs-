@@ -9,8 +9,8 @@ import { CgArrowTopRight } from "react-icons/cg";
 
 export default function footer( params ) {
     return (
-        <div className="p-4 ">
-            <div className="bg-slate-950 p-16 rounded-xl">
+        <div className="p-4  ">
+            <div className="bg-slate-950 flex flex-col gap-10 p-16 rounded-xl">
                 <div className="lg:grid lg:grid-flow-col h-96 gap-6 lg:grid-cols-3">
                     <div className=" bg-blue-100 flex flex-col gap-10 rounded-lg p-5">
                         <h1 className="lg:text-4xl font-extrabold text-balance">
@@ -26,7 +26,7 @@ export default function footer( params ) {
                     </div>
                     <div className=" bg-indigo-300 flex flex-col justify-between rounded-lg  p-5">
                         <div className="lg:text-4xl font-extrabold text-balance">
-                            CONNECT WITH VISTACRAZE
+                            CONNECT WITH Pie-Bond
                         </div>
                         <div className="flex gap-4">
                             <div className="bg-white p-3 rounded-lg">
@@ -62,6 +62,52 @@ export default function footer( params ) {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className=" text-white flex flex-col gap-5">
+                    <h1 className="lg:text-3xl"><span className="text-cyan-500 ">Pie</span>-Bond                </h1>
+                    <div className=" w-full justify-between  flex gap-10">
+                        <div >
+                            <h1 className="lg:text-xl text-cyan-400">Service</h1>
+                            <ul className="flex flex-col">
+                                <Link href="#">SEO</Link>
+                                <Link href="#">App Marketing</Link>
+                                <Link href="#">Digital Marketing Services</Link>
+                                <Link href="#">Content Marketing</Link>
+                                <Link href="#">App Marketing</Link>
+                            </ul>
+                        </div>
+                        <div >
+                            <h1 className="lg:text-xl text-cyan-400">Service</h1>
+                            <ul className="flex flex-col">
+                                <Link href="#">SEO</Link>
+                                <Link href="#">App Marketing</Link>
+                                <Link href="#">Digital Marketing Services</Link>
+                                <Link href="#">Content Marketing</Link>
+                                <Link href="#">App Marketing</Link>
+                            </ul>
+                        </div>
+                        <div >
+                            <h1 className="lg:text-xl text-cyan-400">Service</h1>
+                            <ul className="flex flex-col">
+                                <Link href="#">SEO</Link>
+                                <Link href="#">App Marketing</Link>
+                                <Link href="#">Digital Marketing Services</Link>
+                                <Link href="#">Content Marketing</Link>
+                                <Link href="#">App Marketing</Link>
+                            </ul>
+                        </div>
+                        <div >
+                            <h1 className="lg:text-xl text-cyan-400">Service</h1>
+                            <ul className="flex flex-col">
+                                <Link href="#">SEO</Link>
+                                <Link href="#">App Marketing</Link>
+                                <Link href="#">Digital Marketing Services</Link>
+                                <Link href="#">Content Marketing</Link>
+                                <Link href="#">App Marketing</Link>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

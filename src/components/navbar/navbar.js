@@ -1,56 +1,29 @@
-'use client';
-import { FaGripLines } from "react-icons/fa";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
-import "./navbar.css"
-function NavBar() {
-  const [ navbar, setNavbar ] = useState( false );
-  return (
-    <>
-      <div className="flex fixed z-50 w-screen p-4 pt-6 justify-between">
-        <div className="">
-          <h1 className="text-4xl font-bold text-white">Logo</h1>
+import Link from "next/link";
+import Navbar2 from "./navbar2"
+import Mobilenav from "./mobilenav"
+export default function Navbar() {
+    return (
+        <div className="z-50 sticky  flex flex-col bg-white">
+
+            <div className="flex p-5  justify-between items-center  text-black dark">
+                <div>
+                    <h1 className="lg:text-4xl"><span className="text-cyan-500">Pie</span><span className=" text-yellow-400">-</span>Bond</h1>
+                </div>
+
+                <div className=" justify-between items-center gap-4 hidden lg:flex">
+
+
+                    <Link href="">COMPANY</Link>
+                    <Link href="">INDUSTRIES</Link>
+
+                    <Link href="">BLOGS</Link>
+                    <Link href="">CONTACT</Link>
+
+                </div>
+                <Mobilenav/>
+            </div>
+             <Navbar2 />
         </div>
-        <div className="flex  pr-20 g justify-between">
-          <div className="grid grid-flow-cols  gap-5 grid-cols-2">
-            <div className="grid grid-flow-cols grid-cols-2 gap-5 p-2   items-center rounded-lg text-white bg-black justify-between">
-              <h1>
-                hello1
-              </h1>
-              <h1>
-                hello2
-              </h1>
-            </div>
-            <div className="rounded-lg flex justify-center items-center text-white bg-cyan-500">
-              <h1>
-                hello3
-              </h1>
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="active" />
-            <label htmlFor="active" className="menu-btn">
-              <i className="fas fa-bars flex justify-center items-center mt-4"><FaGripLines/> </i>
-            </label>
-            <div className="wrapper">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Feedback</a></li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </>
-  );
+    )
 }
-
-export default NavBar;
