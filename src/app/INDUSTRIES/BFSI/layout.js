@@ -1,7 +1,7 @@
 
 
 export const metadata = {
-  title: "seo services",
+  title: "BFSI services",
   description: "top digital marketing agency in India ",
 };
 

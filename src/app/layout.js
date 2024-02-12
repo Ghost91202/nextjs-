@@ -1,6 +1,6 @@
+// Import the Inter font correctly
 import { Inter } from "next/font/google";
 import "./globals.css";
-const inter = Inter( { subsets: [ "latin" ] } );
 
 export const metadata = {
   title: "VistaCraze",
@@ -10,7 +10,20 @@ export const metadata = {
 export default function RootLayout( { children } ) {
   return (
     <html lang="en" className="width:100vw height:auto  overflow-x-hidden">
-      <body className={inter.className}>
+      <body>
+        {/* <!-- Google tag (gtag.js) --> */}
+    
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1DCDT8Q0X"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C1DCDT8Q0X');
+  `,
+        }} />
+
 
         {children}
       </body>

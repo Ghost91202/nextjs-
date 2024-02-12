@@ -6,7 +6,7 @@ import Section3 from "../components/Sections/section4"
 import Section4 from "../components/Sections/section5"
 import Footer from '../components/footer/footer';
 import Faq from "../components/faq/faq"
-import Navbar from "@/components/navbar/navbar"
+import Navbar from "@/components/navbar/mainnav"
 export default function Home() {
   return (
     <div ClassName="flex flex-col ">
