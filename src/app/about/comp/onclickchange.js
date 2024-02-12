@@ -15,11 +15,11 @@ const componentsMap = {
 };
 
 const ButtonComponent = () => {
-  const [ selectedComponent, setSelectedComponent ] = useState( null );
+  const [selectedComponent, setSelectedComponent] = useState(null);
 
-  const renderComponent = ( component ) => {
-    const Component = componentsMap[ component ];
-    return Component ? <Component /> : null;
+  const renderComponent = (component) => {
+    const Component = componentsMap[component];
+    return Component ? <Component key={component} /> : null; // Provide key prop here
   };
 
   return (
@@ -27,17 +27,16 @@ const ButtonComponent = () => {
       <div className="flex flex-col gap-10">
         <h1>onclick change Button Component</h1>
         <div className="flex gap-5">
-          {Object.keys( componentsMap ).map( ( component ) => (
-            <div className="flex flex-row  text-green-500  gap-10">
-              <button key={component} onClick={() => setSelectedComponent( component )}>
-                {`Show ${ component }`}
+          {Object.keys(componentsMap).map((component) => (
+            <div key={component} className="flex flex-row text-green-500 gap-10"> {/* Provide key prop here */}
+              <button onClick={() => setSelectedComponent(component)}>
+                {`Show ${component}`}
               </button>
             </div>
-          ) )}
+          ))}
         </div>
 
-        <div style={{ marginTop: '20px' }}>{selectedComponent && renderComponent( selectedComponent )}</div>
-
+        <div style={{ marginTop: '20px' }}>{selectedComponent && renderComponent(selectedComponent)}</div>
       </div>
     </div>
   );

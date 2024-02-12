@@ -17,7 +17,7 @@ export default function Section() {
                         </h1>
                     </div>
                     <div className="lg:text-3xl w-1/2 text-balance">
-                        <h1>At Vista Craze, we're devoted to customer experience and fostering a positive team culture. When you become a part of our team, you're joining a group of individuals who genuinely love their work at every step.</h1>
+                        <h1>At Vista Craze, we&apos;re devoted to customer experience and fostering a positive team culture. When you become a part of our team, you&apos;re joining a group of individuals who genuinely love their work at every step.</h1>
                     </div>
                     <Link href="" className="bg-slate-950 p-2 rounded-2xl flex justify-center items-center text-white w-44 h-16">
                         GO TO VISION

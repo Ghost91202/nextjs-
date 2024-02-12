@@ -42,7 +42,8 @@ export default function FAQ() {
                             <label for="accordion1" className="accordion-item-title lg:text-xl "><span className="icon"></span>What is SEO, and why is it important for online businesses?</label>
                             <MdKeyboardArrowDown className='text-3xl text-black ' />
                         </div>
-                        <div className="accordion-item-desc lg:text-xl  ">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+                        <div className="accordion-item-desc lg:text-xl"> SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site&apos;s ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.
+</div>
                     </div>
 
                     <div className="accordion-item border-b-2 p-5">
@@ -60,7 +61,7 @@ export default function FAQ() {
                             <label for="accordion3" className="accordion-item-title lg:text-xl"><span className="icon"></span>What are the key components of a successful SEO strategy?</label>
                             <MdKeyboardArrowDown className='text-3xl text-black ' />
                         </div>
-                        <div className="accordion-item-desc lg:text-xl ">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+                        <div className="accordion-item-desc lg:text-xl ">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website&apos;s relevance and authority in the eyes of search engines.</div>
                     </div>
 
                     <div className="accordion-item border-b-2 p-5">
@@ -78,7 +79,7 @@ export default function FAQ() {
                             <label for="accordion5" className="accordion-item-title lg:text-xl"><span className="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
                             <MdKeyboardArrowDown className='text-3xl text-black ' />
                         </div>
-                        <div className="accordion-item-desc lg:text-xl ">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+                        <div className="accordion-item-desc lg:text-xl ">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site&apos;s authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It&apos;s important to focus on natural and ethical link-building practices.</div>
                     </div>
 
                 </div>
