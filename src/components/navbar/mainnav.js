@@ -20,17 +20,17 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
-        <div className="flex gap-20 bg-white justify-between  text-black p-6">
+        <div className="flex gap-20 bg-transparent justify-between  text-black p-6">
           <div>
             <h1 className="lg:text-4xl"><span className="text-cyan-500">Pie</span><span className=" text-yellow-400">-</span>Bond</h1>
           </div>
-          <div className="flex gap-4 bg-white text-black">
+          <div className="flex gap-4 bg-transparent justify-center items-center text-black">
             <li>
               <Link href="/" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">HOME</Link>
             </li>
             <li className="dropdown">
-              <a href="#" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">COMPANY</a>
-              <div className="dropdown-content ">
+              <Link href="/about" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">ABOUT</Link>
+              {/* <div className="dropdown-content ">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
                     <Link href="/company/vision&mission" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">Vision & mission</Link>
@@ -41,14 +41,14 @@ const Navbar = () => {
                   </div>
 
                 </div>
-              </div>
+              </div> */}
             </li>
             <li className="dropdown">
               <a href="#" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">SERVICES</a>
               <div className="dropdown-content w-72">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
-                    <Link href="/company/vision&mission" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">DIGITAL MARKETING </Link>
+                    <Link href="/services" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">DIGITAL MARKETING </Link>
 
                     {/* <Link href="/company/Team">WEB DEVELOPMENT </Link>
                     <Link href="/company/CAREERS"></Link>
@@ -72,8 +72,9 @@ const Navbar = () => {
               </div>
             </li>
             <Link href="/BLOGS" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">BLOGS</Link>
-            <Link href="/CONTACT" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">CONTACT</Link>
           </div>
+           <Link href="/CONTACT" className=" hover:border-l-2  pl-2  border-blue-700 border p-2 hover:bg-blue-700 hover:text-white">CONTACT</Link>
+
         </div>
       </ul>
       {/* <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>

@@ -3,13 +3,13 @@ import Engagement from "../../assets/engagement.avif"
 
 export default function engagement( params ) {
     return (
-        <div className="lg:pb-10 lg:h-2xl lg:p-20">
+        <div className="lg:pb-10 lg:h-2xl lg:p-10">
 
-            <div className="bg-slate-400 flex flex-col lg:gap-10  p-5 rounded-2xl">
+            <div className="bg-blue-700 flex flex-col lg:gap-10  p-5 rounded-2xl">
                 <div className=" ">
-                      <div className=" flex flex-col gap-5 absolute z-10 text-white w-1/2 p-10">
-                    <h1 className="lg:text-5xl lg:font-semibold ">SEO Engagement Models</h1>
-                    <p className="w-3/4">You can partner with Pie-bond to get solutions tailored specially for your unique needs. Are you a CEO or Marketing Manager looking to increase your brand’s digital footprint or a start-up looking for consultation? We have got you covered in our dynamic SEO Engagement Models.
+                      <div className=" flex flex-col gap-5 absolute z-10 text-white lg:w-1/2 p-2 lg:p-10">
+                    <h1 className="lg:text-5xl text-xl font-semibold ">SEO Engagement Models</h1>
+                    <p className=" text-xl text-bold">You can partner with Pie-bond to get solutions tailored specially for your unique needs. Are you a CEO or Marketing Manager looking to increase your brand’s digital footprint or a start-up looking for consultation? We have got you covered in our dynamic SEO Engagement Models.
                     </p>
                 </div>
                 <Image src={Engagement} alt="pie-bond" className="

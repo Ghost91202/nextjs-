@@ -4,7 +4,7 @@ import { IoMdAnalytics } from "react-icons/io";
 
 export default function Choose( params ) {
     return (
-        <div className="w-screen lg:pb-10 lg:p-20">
+        <div className="w-screen lg:pb-10 p-10 lg:p-20">
             <div className="flex flex-col gap-5 lg:gap-10">
                  <div className=" flex flex-col gap-5    ">
                 <h1 className="font-semibold lg:text-5xl">Why Choose Pie-bond for SEO Services?</h1>

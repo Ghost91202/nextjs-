@@ -1,0 +1,16 @@
+
+export default function Section6( params ) {
+    return (
+        <div className="h-screen w-screen text-white bg-cyan-700">
+            <div className="lg:p-20">
+                <h1 className=" font-bold text-cyan-900">FULL SERVICE MARKETING AGENCY</h1>
+                <h1 className="text-3xl lg:text-7xl lg:w-3/4  text-balance font-extrabold">GROW YOUR <span className="text-cyan-900">BRAND</span> WITH CUSTOMIZED <span className="text-cyan-900">MARKETING</span>  STRATEGIES.</h1>
+                <h1 className=" font-bold lg:w-1/2">When it comes to marketing your brand, working with a full service marketing agency can transform your business and how you work. Daniel Brian Advertising is a full-service dealership, healthcare, franchise, and entertainment marketing agency.</h1>
+
+
+
+            </div>
+        </div>
+
+    )
+}
