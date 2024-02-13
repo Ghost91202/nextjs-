@@ -14,7 +14,7 @@ export default function cards4( { title, icon, link } ) {
                 <h1 className="text-4xl">{title}</h1>
                 {isValidLink ? (
             <div className="  flex items-center lg:text-2xl  ">
-              <Link href={link}>view more--</Link><IoIosArrowRoundForward/>
+              <Link href={link}>view more--</Link>
             </div>
           ) : (
             <span className="text-2xl ">view more--</span>
