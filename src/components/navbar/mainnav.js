@@ -26,76 +26,74 @@ const Navbar = () => {
           </div>
           <div className="flex gap-4 bg-white text-black">
             <li>
-              <Link href="/">HOME</Link>
+              <Link href="/" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">HOME</Link>
             </li>
             <li className="dropdown">
-              <a href="#">COMPANY</a>
+              <a href="#" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">COMPANY</a>
               <div className="dropdown-content ">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
-                    <Link href="/company/vision&mission">Vision & mission</Link>
+                    <Link href="/company/vision&mission" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">Vision & mission</Link>
 
-                    <Link href="/company/Team">Team </Link>
-                    <Link href="/company/CAREERS">CAREERS</Link>
-                    <Link href="/company/Blogs">BLOGS</Link>
+                    <Link href="/company/Team" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">Team </Link>
+                    <Link href="/company/CAREERS" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">CAREERS</Link>
+                    <Link href="/company/Blogs" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">BLOGS</Link>
                   </div>
 
                 </div>
               </div>
             </li>
             <li className="dropdown">
-              <a href="#">INDUSTRIES</a>
-              <div className="dropdown-content ">
+              <a href="#" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">SERVICES</a>
+              <div className="dropdown-content w-72">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
-                    <Link href="/INDUSTRIES/BFSI">BFSI</Link>
+                    <Link href="/company/vision&mission" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">DIGITAL MARKETING </Link>
 
-                    <Link href="/INDUSTRIES/B2B">B2B</Link>
-                    <Link href="/INDUSTRIES/HEALTHCARE">HEALTHCARE  </Link>
-                    <Link href="/INDUSTRIES/EDUCATION">EDUCATION   </Link>
+                    {/* <Link href="/company/Team">WEB DEVELOPMENT </Link>
+                    <Link href="/company/CAREERS"></Link>
+                    <Link href="/company/Blogs">BLOGS</Link> */}
                   </div>
 
                 </div>
               </div>
             </li>
-            <Link href="/BLOGS">BLOGS</Link>
-            <Link href="/CONTACT">CONTACT</Link>
+            <li className="dropdown">
+              <a href="#" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">INDUSTRIES</a>
+              <div className="dropdown-content ">
+                <div className="flex gap-10">
+                  <div className="flex gap-2 flex-col">
+                    <Link href="/INDUSTRIES/BFSI" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">BFSI</Link>
+                    <Link href="/INDUSTRIES/B2B" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">B2B</Link>
+                    <Link href="/INDUSTRIES/HEALTHCARE" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">HEALTHCARE  </Link>
+                    <Link href="/INDUSTRIES/EDUCATION" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">EDUCATION   </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <Link href="/BLOGS" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">BLOGS</Link>
+            <Link href="/CONTACT" className=" hover:border-l-2 hover:text-blue-600 pl-2  border-blue-700 ">CONTACT</Link>
           </div>
         </div>
       </ul>
-      <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
+      {/* <ul className={`menu ${ isMenuOpen ? 'open' : '' }`}>
         <div className="flex gap-20 bg-white justify-center text-black p-4">
-
           <div className="flex gap-4 bg-white text-black">
-
             <li className="dropdown">
               <a href="#">SEO</a>
               <div className="dropdown-content ">
                 <div className="flex gap-10">
                   <div className="flex gap-2 flex-col">
                     <Link href="/services/SEO/seoservices">SEO SERVICES</Link>
-
                     <Link href="/services/SEO/ENTERPRISE-SEO">ENTERPRISE SEO  </Link>
                     <Link href="/services/SEO/E-COMMERCE-SEO">E-COMMERCE SEO</Link>
                     <Link href="/services/SEO/LOCAL-SEO">LOCAL SEO</Link>
                     <Link href="/services/SEO/SEO-RESELLER-SERVICES">SEO RESELLER SERVICES</Link>
                   </div>
-
                 </div>
               </div>
             </li>
-            {/* <li className="dropdown">
-              <a href="#">APP MARKETING</a>
-              <div className="dropdown-content ">
-                <div className="flex gap-10">
-                  <div className="flex gap-2 flex-col">
-                    <Link href="/services/service1">APP STORE OPTIMIZATION (ASO)</Link>
-                    <Link href="/services/service2">PAID MARKETING</Link>
-                  </div>
 
-                </div>
-              </div>
-            </li> */}
             <li className="dropdown">
               <a href="#">CONTENT MARKETING </a>
               <div className="dropdown-content ">
@@ -144,7 +142,7 @@ const Navbar = () => {
             </li>
           </div>
         </div>
-      </ul>
+      </ul> */}
 
     </nav>
   );
