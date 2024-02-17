@@ -2,7 +2,7 @@
 import "../../styles/globals.css"
 export default function Section6( params ) {
     return (
-        <div className="h-screen w-screen text-white bgcolor">
+        <div className="h-auto lg:h-screen w-screen text-white bgcolor">
             <div className="lg:p-20">
                 <h1 className=" font-bold ">FULL SERVICE MARKETING AGENCY</h1>
                 <h1 className="text-3xl lg:text-7xl lg:w-3/4  text-balance font-extrabold">GROW YOUR <span className="">BRAND</span> WITH CUSTOMIZED <span className="">MARKETING</span>  STRATEGIES.</h1>

@@ -2,7 +2,7 @@ import "../../styles/globals.css"
 
 export default function Section6( params ) {
     return (
-        <div className="h-screen w-screen justify-center items-center flex text-white bg-slate-900">
+        <div className="h-auto lg:h-screen w-screen justify-center items-center flex text-white bg-slate-900">
             <div className="lg:p-20">
                 <h1 className=" font-bold ">DIGITAL MARKETING EXPERTS</h1>
                 <h1 className="text-3xl lg:text-7xl lg:w-3/4  text-balance font-extrabold"><span className="textcolor2">LEVEL UP </span> YOUR DIGITAL BRAND.</h1>
