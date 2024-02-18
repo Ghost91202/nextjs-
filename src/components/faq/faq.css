@@ -1,5 +1,5 @@
 .accordion * {
-    color: black;
+    
 }
 
 .accordion {
@@ -8,7 +8,7 @@
     font-family: "Sora", sans-serif;
     max-width: 991px;
     min-width: 320px;
-    color: black;
+    
     padding: 0 50px;
 }
 
@@ -21,7 +21,7 @@
     margin: 0;
     display: flex;
     width: 100%;
-    color: black;
+    
     cursor: pointer;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -34,7 +34,7 @@
     display: none;
     line-height: 22px;
     font-weight: 300;
-    color: black;
+    
     border-top: 1px dashed #ddd;
     padding: 10px 20px 20px;
     box-sizing: border-box;

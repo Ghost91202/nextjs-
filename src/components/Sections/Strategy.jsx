@@ -2,12 +2,12 @@ import Strt from "../../assets/strt.jpg"
 import Image from "next/image";
 const Strategy = () => {
   return (
-    <div className=" flex">
-      <div className="bg-black flex flex-col gap-5 lg:p-20">
+    <div className=" flex lg:flex-row flex-col lg:p-0 ">
+      <div className="bg-black flex flex-col gap-5 p-10 lg:p-20">
         <h1 className="text-4xl text-white">
           Winning strategy, expertise, and relentless innovation.
         </h1>
-        <div className="text-gray-500 lg:flex justify-between">
+        <div className="text-gray-500 sm:flex justify-between">
           <div className="lg:1/3">
             <div className="py-2 text-lg">
               <a href="">Strategy</a>
