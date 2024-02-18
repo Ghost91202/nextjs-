@@ -9,13 +9,11 @@ import Quote from "../components/Sections/Quote"
 import Grid from "../components/Sections/Grid.jsx"
 import Cont from "../components/Sections/Connect"
 import Strategy from "../components/Sections/Strategy"
-import Button from "../components/assets/Buttons/button2"
 export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
       <Hero />
-      <Button/>
       <Section6 />
       <Section7 />
       <Quote />

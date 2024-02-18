@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-
+import Button from "../../components/assets/Buttons/button2"
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
@@ -78,7 +78,7 @@ const Navbar = () => {
                                     href="#"
                                     className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:p-0   `}
                                 >
-                                    About
+                                    <Button/>
                                 </Link>
                             </li>
                             <li>

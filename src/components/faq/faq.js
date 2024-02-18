@@ -24,9 +24,9 @@ export default function FAQ() {
         tl.to( '.left-text, .right-text', { x: '0%', opacity: 1, ease: 'power2.out' } );
     }, [] );
     return (
-        <div className=" lg:p-10 flex justify-center w-screen bg-slate-900 text-white overflow-x-hidden items-center">
+        <div className=" lg:p-10 flex justify-center w-screen bg-slate-900 font-mono text-white overflow-x-hidden items-center">
             <div className=" accordion relative w-screen justify-center flex lg:gap-10">
-                <div className="slide-container  lg:text-6xl text-2xl  lg:mb-0 -mb-32   font-bold overflow-hidden flex ">
+                <div className="slide-container  lg:text-6xl text-2xl  lg:mb-0 -mb-32  overflow-hidden flex ">
                     <div className='h-44'> <div className="left-text">
                         <h1 className="text-left ">Frequently</h1>
                     </div>

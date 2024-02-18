@@ -1,0 +1,40 @@
+// ButtonWithSlider.js
+"use client";
+import React, { useState } from "react";
+import Slider from "./Slider.js";
+import { GoArrowRight } from "react-icons/go";
+
+const ButtonWithSlider = ({button, title, desc1, Img1, title2,  submenu1, subdesc1, submenu2, subdesc2, submenu3, subdesc3, submenu4, subdesc4, submenu5, subdesc5, lastdesc}) => {
+  const [showSlider, setShowSlider] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowSlider(!showSlider);
+  };
+
+  return (
+      <div >
+          <div className="bg-blue-800 flex flex-col justify-center items-center p-10  text-white">
+
+      <button onClick={handleButtonClick} className="font-mono ring-transparent border-none flex gap-5 text-white items-center lg:text-4xl ">{button} <GoArrowRight/></button>
+          </div>
+      {showSlider && <Slider title={title}
+        desc1={desc1}
+        Img1={Img1}
+        title2={title2}
+        submenu1={submenu1}
+        subdesc1={subdesc1}
+        submenu2={submenu2}
+        subdesc2={subdesc2}
+        submenu3={submenu3}
+        subdesc3={subdesc3}
+        submenu4={submenu4}
+        subdesc4={subdesc4}
+        submenu5={submenu5}
+        subdesc5={subdesc5}
+        lastdesc={lastdesc}
+      />}
+    </div>
+  );
+};
+
+export default ButtonWithSlider;
