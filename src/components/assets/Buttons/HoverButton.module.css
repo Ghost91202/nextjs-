@@ -1,0 +1,35 @@
+/* HoverButton.module.css */
+
+.container {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.button {
+
+    border: none;
+    cursor: pointer;
+}
+
+.drawer {
+    position: fixed;
+    /* Change from 'absolute' to 'fixed' */
+    top: 7%;
+    left: 0;
+
+    /* Use full viewport height */
+
+    /* Use full viewport width */
+
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.container:hover .drawer {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}

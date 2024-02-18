@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-
+import Button from "../../components/assets/Buttons/button2"
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div>
+        <div className="relative">
             <nav
                 className={`bg-${scrolled ? "white" : "transparent"} dark:bg-${scrolled ? "white" : "transparent"} fixed w-full z-20 top-0 start-0`}
             >
@@ -76,12 +76,15 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="#"
-                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:p-0   `}
-                                >
-                                    About
-                                </Link>
+
+                                    <Button
+                                        title="services"
+                                        menu1="seo"
+                                    link1="/services"
+                                    desc1="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO.
+"
+                                    />
+
                             </li>
                             <li>
                                 <Link
