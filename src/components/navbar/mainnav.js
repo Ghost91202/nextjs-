@@ -60,8 +60,7 @@ const Navbar = () => {
                                         title="services"
                                         menu1="seo"
                                     link1="/services"
-                                    desc1="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO.
-"
+                                    desc1="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
                                     />
 
                             </li>

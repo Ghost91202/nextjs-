@@ -23,10 +23,9 @@ export default function Home() {
   ];
   return (
     <div ClassName="flex flex-col ">
-          <Navbar />
+      <Navbar />
       <Banner />
-            <Proven />
-
+      <Proven />
       <ServiceCard />
       <Faq1 faqData={faqData}/>
       <Drawer title="Understanding SEO Services"
