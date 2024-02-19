@@ -11,7 +11,7 @@ const FAQComponent = ({ faqData }) => {
   };
 
   return (
-    <div className="bg-gray-200 lg:p-20 h-auto flex items-center justify-center font-mono">
+    <div className="bg-gray-200 lg:p-20 p-10 h-auto flex items-center justify-center font-serif">
       <div className="w-screen flex flex-col lg:gap-10 lg:w-3/4">
 
           <h1 className="lg:text-4xl text-2xl font-semibold mb-6 text-center">Why Professional SEO Services?</h1>
@@ -20,7 +20,7 @@ const FAQComponent = ({ faqData }) => {
               <div key={index} className="mb-4 flex flex-col justify-center items-center">
                 <button
                   onClick={() => handleQuestionClick(index)}
-                  className="w-full lg:w-3/4 py-2 px-4 bg-blue-800 text-white text-left text-lg rounded focus:outline-none flex items-center justify-between"
+                  className="w-full lg:w-3/4 py-2 px-4 bg-blue-800 text-white text-left text-sm lg:text-lg rounded focus:outline-none flex items-center justify-between"
                 >
                   {faq.question}
                   <CiCirclePlus className="text-2xl" />

@@ -15,7 +15,7 @@ const ButtonWithSlider = ({button, title, desc1, Img1, title2,  submenu1, subdes
       <div >
           <div className="bg-blue-800 flex flex-col justify-center items-center p-10  text-white">
 
-      <button onClick={handleButtonClick} className="font-mono ring-transparent border-none flex gap-5 text-white items-center lg:text-4xl ">{button} <GoArrowRight/></button>
+      <button onClick={handleButtonClick} className="font-serif ring-transparent border-none flex gap-5 text-2xl text-white items-center lg:text-4xl ">{button} <GoArrowRight/></button>
           </div>
       {showSlider && <Slider title={title}
         desc1={desc1}

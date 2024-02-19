@@ -11,11 +11,11 @@ import { CiLaptop } from "react-icons/ci";
 const Myslider = () => {
 
   const breakpoints = {
-    480: {
-      slidesPerView: 2, // 2 slides on phones
+    380: {
+      slidesPerView: 1, // 2 slides on phones
     },
     768: {
-      slidesPerView: 3, // 5 slides on laptops
+      slidesPerView: 2, // 5 slides on laptops
     },
     1200: {
       slidesPerView: 3, // 6 slides on monitors
