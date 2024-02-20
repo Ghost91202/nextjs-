@@ -32,7 +32,7 @@ const Navbar = () => {
                         href="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse" >
                         <span className={`self-center text-4xl  whitespace-nowrap ${scrolled ? "text-black" : "dark:text-white"}`}>
-                            Pie-Bond
+                            Pie Bond
                         </span>
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -79,12 +79,7 @@ const Navbar = () => {
 
                             </li>
                             <li>
-                                {/* <Link
-                                    href="#"
-                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded  md:hover:bg-transparent  md:p-0   `}
-                                >
-                                    Services
-                                </Link> */}
+                               
                             </li>
                             <li>
                                 <Link
