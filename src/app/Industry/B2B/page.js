@@ -1,18 +1,16 @@
 
 
 import Footer from '@/components/footer/footer';
-import Banner from "../../components/hero/hero2"
+import Banner from "@/components/hero/hero2"
 import Navbar from "@/components/navbar/mainnav"
-import Faq from "../../components/faq/faq"
-import When from "../../components/when/page"
-import ServiceCard from "../../components/servicesslider/sslider"
-import Proven from "../../components/Sections/proven"
-import Drawer from "../../components/drawer/drawer"
-import Faq1 from "../../components/faq/faq2"
-import seoimg from "../../assets/unds.jpg"
+import Faq from "@/components/faq/faq"
+import ServiceCard from "@/components/servicesslider/sslider"
+import Proven from "@/components/Sections/proven"
+import Drawer from "@/components/drawer/drawer"
+import Faq1 from "@/components/faq/faq2"
+import seoimg from "@/assets/unds.jpg"
 import Section2 from '@/components/services/sections/section2';
 import Section3 from '@/components/services/sections/section3';
-import Price from "../../components/services/price/price"
 export default function Home() {
   const faqData = [
     { question: 'SEO Audits: In-Depth Analysis for Tailored Strategies', answer: 'Our SEO audits go beyond automated checks. Each audit is conducted by an experienced team member, covering on-site and off-site SEO, user experience, content analysis and competitor analysis, providing a comprehensive roadmap in our Performance Tracker for your digital success.' },
