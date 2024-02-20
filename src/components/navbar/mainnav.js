@@ -25,12 +25,13 @@ const Navbar = () => {
     return (
         <div className="relative">
             <nav
-                className="">
+                className={`bg-${scrolled ? "white" : "transparent"} dark:bg-${scrolled ? "white" : "transparent"} fixed w-full z-20 top-0 start-0`}
+            >
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link
                         href="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse" >
-                        <span className="">
+                        <span className={`self-center text-4xl  whitespace-nowrap ${scrolled ? "text-black" : "dark:text-white"}`}>
                             Pie Bond
                         </span>
                     </Link>
@@ -45,7 +46,7 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     href="#"
-                                    className=""
+                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:bg-transparent  md:p-0`}
                                     aria-current="page" >
                                     Home
                                 </Link>
@@ -78,12 +79,17 @@ const Navbar = () => {
 
                             </li>
                             <li>
-
+                                {/* <Link
+                                    href="#"
+                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded  md:hover:bg-transparent  md:p-0   `}
+                                >
+                                    Services
+                                </Link> */}
                             </li>
                             <li>
                                 <Link
                                     href="#"
-                                    className=""
+                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:p-0   `}
                                 >
                                     Contact
                                 </Link>
