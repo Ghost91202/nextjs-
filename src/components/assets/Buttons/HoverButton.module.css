@@ -3,7 +3,7 @@
 .container {
     position: relative;
     display: inline-block;
-    color: black;
+    color: white;
     mix-blend-mode: difference;
 }
 
@@ -27,12 +27,10 @@
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s ease-in-out;
     transform: translateX(-100%);
-    background-color: black;
 }
 
 .container:hover .drawer {
     display: block;
     opacity: 1;
     transform: translateX(0);
-    background-color: black;
 }
