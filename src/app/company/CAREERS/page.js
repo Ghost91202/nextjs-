@@ -4,9 +4,9 @@ export default function SEO() {
     return (
         <div ClassName="flex flex-col ">
             {/* <Navbar /> */}
-            <Navbar/>
+            <Navbar />
             hello team
-        <Footer/>
+            <Footer />
             {/* <Footer /> */}
         </div>
     );
