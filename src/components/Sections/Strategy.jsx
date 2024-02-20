@@ -1,5 +1,6 @@
 import Strt from "../../assets/strt.jpg"
 import Image from "next/image";
+import Link from "next/link";
 const Strategy = () => {
   return (
     <div className=" flex lg:flex-row flex-col lg:p-0 ">
@@ -10,64 +11,64 @@ const Strategy = () => {
         <div className="text-gray-500 sm:flex justify-between">
           <div className="lg:1/3">
             <div className="py-2 text-lg">
-              <a href="">Strategy</a>
+              <Link href="/">Strategy</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Branding</a>
+              <Link href="/">Branding</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Creative</a>
+              <Link href="/">Creative</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Content</a>
+              <Link href="/">Content</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">OTT & Connected TV</a>
+              <Link href="/">OTT & Connected TV</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Paid Social</a>
+              <Link href="/">Paid Social</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Paid Search</a>
+              <Link href="/">Paid Search</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Amazon</a>
+              <Link href="/">Amazon</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Display & Retargeting</a>
+              <Link href="/">Display & Retargeting</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Retail media</a>
+              <Link href="/">Retail media</Link>
             </div>
           </div>
 
           <div className="lg:w-2/4">
             <div className="py-2 text-lg">
-              <a href="">Streaming Audio</a>
+              <Link href="/">Streaming Audio</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Grocery eCommerce Marketing</a>
+              <Link href="/">Grocery eCommerce Marketing</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Influencer</a>
+              <Link href="/">Influencer</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">SEO</a>
+              <Link href="/">SEO</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Email, SMS, & CRM</a>
+              <Link href="/">Email, SMS, & CRM</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">Social Media</a>
+              <Link href="/">Social Media</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">data Science & Analytics</a>
+              <Link href="/">data Science & Analytics</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">UX Design</a>
+              <Link href="/">UX Design</Link>
             </div>
             <div className="py-2 text-lg">
-              <a href="">eCommerce</a>
+              <Link href="/">eCommerce</Link>
             </div>
           </div>
         </div>
@@ -79,7 +80,7 @@ const Strategy = () => {
       <div className=" lg:w-1/2 h-auto   flex items-center justify-center">
         <Image
           src={Strt}
-          alt="digital marketing"
+          alt="pie bond  digital marketing agency "
           className=" lg:-ml-32 lg:h-3/4 flex justify-center"
         />
       </div>

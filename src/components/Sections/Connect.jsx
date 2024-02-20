@@ -6,7 +6,7 @@ const Connect = () => {
       <div className=" lg:h-auto   ">
         <Image
           src={Contimg}
-          alt="digital marketing agency"
+          alt="best seo digital marketing agency"
           className="w-full h-full"
         />
       </div>
