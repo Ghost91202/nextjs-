@@ -42,25 +42,40 @@ const Navbar = () => {
                     </div>
                     <div
                         className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                        id="navbar-sticky"
-                    >
+                        id="navbar-sticky" >
                         <ul className="flex flex-col justify-items-center  space-b text-xl p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                             <li>
                                 <Link
                                     href="#"
                                     className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:bg-transparent  md:p-0`}
-                                    aria-current="page"
-                                >
+                                    aria-current="page" >
                                     Home
                                 </Link>
                             </li>
                             <li>
-
-                                    <Button
-                                        title="services"
-                                        menu1="seo"
+                                <Button
+                                    title="services"
+                                    menu1="seo"
                                     link1="/services"
                                     desc1="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu2="Marketing Consultation"
+                                    link2="/services/MarketingConsultation"
+                                    desc2="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu3="seo"
+                                    link3="/services"
+                                    desc3="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu4="seo"
+                                    link4="/services"
+                                    desc4="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu5="seo"
+                                    link5="/services"
+                                    desc5="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu6="seo"
+                                    link6="/services"
+                                    desc6="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
+                                    menu7="seo"
+                                    link7="/services"
+                                    desc7="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
                                     />
 
                             </li>

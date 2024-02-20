@@ -36,11 +36,10 @@ const HoverButton = ( { title, menu1, link1, link2, link3, link4, link5, link6, 
                 <button className={styles.button}>{title}</button>
                 {isHovered && (
                     <div className={styles.drawer}>
-                        <div className="grid h-96 w-screen overflow-hidden p-10 bg-black text-white grid-flow-row grid-cols-4">
-                            <div className="h-96">
-                                <Image src={Nav1} alt="" className="h-96 w-auto" />
-                            </div>
-                            <div className=" flex flex-col gap-4">
+                        <div className="flex  h-auto w-screen overflow-hidden p-10 bg-black text-white grid-flow-row ">
+
+                            <div className=" grid grid-cols-3 grid-flow-row p-10">
+                                 <div className=" flex flex-col gap-4">
                                 {/* Use Link only if link is a valid string */}
                                 {isValidLink1 ? (
                                     <div className=" text-blue-600 border-b pb-3 w-fit flex items-center lg:text-xl font-semibold ">
@@ -81,6 +80,27 @@ const HoverButton = ( { title, menu1, link1, link2, link3, link4, link5, link6, 
                                 )}
                                 <p>{desc4}</p>
                             </div>
+                            <div>
+                                {isValidLink5 ? (
+                                    <div className=" text-blue-600 border-b pb-3 w-fit flex items-center lg:text-xl font-semibold ">
+                                        <Link href={link5}>{menu5}</Link><IoIosArrowRoundForward />
+                                    </div>
+                                ) : (
+                                    <span className="text-2xl font-bold">{menu5}</span>
+                                )}
+                                <p>{desc5}</p>
+                            </div>
+                            <div>
+                                {isValidLink6 ? (
+                                    <div className=" text-blue-600 border-b pb-3 w-fit flex items-center lg:text-xl font-semibold ">
+                                        <Link href={link6}>{menu6}</Link><IoIosArrowRoundForward />
+                                    </div>
+                                ) : (
+                                    <span className="text-2xl font-bold">{menu6}</span>
+                                )}
+                                <p>{desc6}</p>
+                            </div>
+                           </div>
                         </div>
                     </div>
                 )}
