@@ -25,13 +25,12 @@ const Navbar = () => {
     return (
         <div className="relative">
             <nav
-                className={`bg-${scrolled ? "white" : "transparent"} dark:bg-${scrolled ? "white" : "transparent"} fixed w-full z-20 top-0 start-0`}
-            >
+                className="">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link
                         href="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse" >
-                        <span className={`self-center text-4xl  whitespace-nowrap ${scrolled ? "text-black" : "dark:text-white"}`}>
+                        <span className="">
                             Pie Bond
                         </span>
                     </Link>
@@ -46,7 +45,7 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     href="#"
-                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:bg-transparent  md:p-0`}
+                                    className=""
                                     aria-current="page" >
                                     Home
                                 </Link>
@@ -79,12 +78,12 @@ const Navbar = () => {
 
                             </li>
                             <li>
-                               
+
                             </li>
                             <li>
                                 <Link
                                     href="#"
-                                    className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded md:p-0   `}
+                                    className=""
                                 >
                                     Contact
                                 </Link>
