@@ -30,14 +30,13 @@ const Navbar = () => {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link
                         href="/"
-                        className="flex items-center space-x-3 rtl:space-x-reverse"
-                    >
+                        className="flex items-center space-x-3 rtl:space-x-reverse" >
                         <span className={`self-center text-4xl  whitespace-nowrap ${scrolled ? "text-black" : "dark:text-white"}`}>
                             Pie-Bond
                         </span>
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                         <Drawer/>
+                         <Drawer className="text-blue-600  z-50 relative" />
 
                     </div>
                     <div

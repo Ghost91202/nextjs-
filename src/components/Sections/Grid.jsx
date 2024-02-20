@@ -10,8 +10,8 @@ import I6 from '../../assets/I6.jpg';
 
 const Grid = () => {
   return (
-    <div className='my-[100px] mx-[100px]'>
-      <div className='grid grid-flow-row  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3'>
+    <div className='p-10 lg:p-20'>
+      <div className='grid grid-flow-row  grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3'>
         <div className='relative image-container hover-zoom group'><Image src={I1} alt="" className="w-full h-full object-cover" />
           <div className='content absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold'><div className='group-hover:opacity-0'>Seo</div> <div className='hidden-container opacity-0 group-hover:opacity-100'>Seo <br />sm</div></div>
         </div>
