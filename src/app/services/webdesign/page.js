@@ -4,7 +4,6 @@ import Footer from '@/components/footer/footer';
 import Banner from "../../../components/hero/hero2"
 import Navbar from "@/components/navbar/mainnav"
 import Faq from "../../../components/faq/faq"
-import When from "../../../components/when/page"
 import ServiceCard from "../../../components/servicesslider/sslider"
 import Proven from "../../../components/Sections/proven"
 import Drawer from "../../../components/drawer/drawer"
@@ -12,47 +11,125 @@ import Faq1 from "../../../components/faq/faq2"
 import seoimg from "../../../assets/unds.jpg"
 import Section2 from '@/components/services/sections/section2';
 import Section3 from '@/components/services/sections/section3';
-import Price from "../../../components/services/price/price"
+
 export default function Home() {
   const faqData = [
-    { question: 'SEO Audits: In-Depth Analysis for Tailored Strategies', answer: 'Our SEO audits go beyond automated checks. Each audit is conducted by an experienced team member, covering on-site and off-site SEO, user experience, content analysis and competitor analysis, providing a comprehensive roadmap in our Performance Tracker for your digital success.' },
-    { question: 'Content Audit: Gaining a Competitive Edge', answer: 'We conduct thorough competitor backlink audits to uncover their strategies and identify untapped opportunities. This insight allows us to integrate effective tactics into your SEO campaign, ensuring you stay ahead in the digital race.' },
-    { question: 'Content Optimisation: Maximising Your Digital Reach', answer: 'Content optimisation ensures your content ranks high in both direct and related searches. We use advanced SEO tools, such as SE Ranking and AHREF, and manual analysis to enhance your content&apos;s visibility, driving traffic and conversions' },
-    { question: 'What is FAQ #4?', answer: 'Answer to FAQ #4' },
-    { question: 'What is FAQ #5?', answer: 'Answer to FAQ #5' },
+    {
+      question: "Website Redesign: How can a website redesign benefit my business?",
+      answer:
+        "Our web design experts approach website redesigns strategically, focusing on enhancing both aesthetics and functionality. By analyzing user behavior and industry trends, we revamp your site to align with current standards. The result? A visually stunning and user-friendly website that not only attracts but also retains your target audience, ultimately boosting your business's online presence and performance.",
+    },
+    {
+      question: "Responsive Design: Why is responsive design crucial for websites?",
+      answer:
+        "Responsive design is at the core of our web development philosophy. With an increasing number of users accessing websites on various devices, we ensure your site adapts seamlessly to different screen sizes. This not only improves user experience but also positively impacts search engine rankings. Our commitment to responsive design guarantees that your website looks and functions flawlessly across desktops, tablets, and smartphones.",
+    },
+    {
+      question: "E-commerce Integration: How can you enhance my online store's design?",
+      answer:
+        "For e-commerce businesses, we specialize in designing visually appealing and intuitive online stores. Our approach includes optimizing product displays, simplifying the checkout process, and incorporating secure payment gateways. By creating an immersive and trustworthy online shopping experience, we aim to maximize conversions and drive sustained growth for your e-commerce venture.",
+    },
+    {
+      question: "SEO-friendly Design: Why is SEO a crucial consideration in web design?",
+      answer:
+        "SEO isn't an afterthought; it's integral to our web design strategy. We implement SEO-friendly elements from the ground up, including optimized code, strategic keyword placement, and mobile-friendliness. By aligning your website with search engine algorithms, we enhance its visibility and ranking, ensuring your business is easily discoverable by your target audience.",
+    },
+    {
+      question: "Content Management: How can I easily update content on my website?",
+      answer:
+        "Empowering you to manage your content effortlessly, we integrate user-friendly content management systems (CMS). Whether it's updating text, images, or adding new pages, our CMS solutions make content management a breeze. This not only saves you time but also gives you the autonomy to keep your website content fresh and relevant without technical complexities.",
+    },
   ];
+  
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
-      <Proven />
-      <ServiceCard />
+      <Banner
+      mainheading='The India&apos;s Best Web Design Agency'
+       />
+       <Proven
+        title1="Skilled Developers"
+        desc1="Step into a realm where skilled developers meticulously construct state-of-the-art websites, merging cutting-edge technologies with industry-leading methodologies."
+        title2="Quality Controlled"
+        desc2="
+     Secure your online footprint with our rigorous quality assurance procedures, guaranteeing that each pixel and line of code meets the most stringent standards."
+        title3="Flexible Packages"
+        desc3="Experience the advantage of our adaptable packages, customized to suit your specific requirements. Our scalable solutions seamlessly align with your business objectives."
+      />
+       <ServiceCard
+        title="Professional Web Design Agency In India"
+        desc="At Pie-Bond, we go beyond mere website creation; we specialize in crafting digital experiences. Our versatile team of web developers is proficient in providing holistic website design, maintenance, security, and hosting solutions. We understand that web design goes beyond appearances, prioritizing functionality and the attainment of your marketing objectives. From meticulously structured sitemaps to intuitive layouts, we guarantee your website is a harmonious fusion of style and utility, accurately embodying your brand identity."
+        cardTitle1="Dvelopment & Innovation"
+        desc1="We continuously lead the charge in adopting emerging technologies, infusing avant-garde concepts to propel the success of your website to new heights."
+        cardTitle2="Content Management Solutions"
+        desc2="Our websites are constructed on Content Management Systems (CMS), offering you the versatility and autonomy to effortlessly oversee your content."
+        cardTitle3="Hosting & Maintenance"
+        desc3="We extend reliable hosting and maintenance services, ensuring your website operates seamlessly with utmost security, safeguarding its performance consistently, day and night."
+        cardTitle4="Research & Planning"
+        desc4=" We commence with a thorough examination of your business and market landscape, harmonizing our designs with your objectives and customer anticipations."
+        cardTitle5="Creative Design & User Interface"
+        desc5="Our websites are custom-made, captivating, and engineered to boost digital traffic. We emphasize clarity and ease, achieving your marketing objectives through sleek design and user-friendly experiences."
+      />
       <Faq1 faqData={faqData}/>
-      <Drawer title="Understanding SEO Services"
-        button="Understand Our Seo Service"
-        desc1="Think of SEO as the digital equivalent of attending a high-stakes networking event. In the room (search engine rankings),
-            everyone&apos;s jostling for the attention of a few key people (your target audience). Some have the advantage of being well-known, others are newcomers. Like you at a networking event, your website starts as one among many. But just as your interactions at the event can turn you into a &apos;must-meet&apos; figure, our SEO strategies ensure your website becomes a &apos;must-visit&apos; destination on the digital landscape."
-        Img1={seoimg}
-        title2="Our 5-stage process for effective SEO services:"
-        submenu1="1. Research & Plan"
-        subdesc1="Just as you would study the guest list and topics before a networking event, we start by understanding your business landscape and competitors. Knowing who and what you&apos;re up against enables us to position you strategically, so you&apos;re not just a face in the crowd but a key player in your field."
-        submenu2="2. Track & Measure"
-        subdesc2="At a networking event, you&apos;d take note of who you spoke with, who showed interest and who you connected with. Our SEO analytics are the digital equivalent, providing real-time data on who&apos;s visiting your site, what they&apos;re interested in, and how they found you in the first place. To pair with these analytic tools we also set certain goals that we can measure the success of our SEO efforts against so that we know that we are on the right path"
-        submenu3="3. Execute"
-        subdesc3="Now, it&apos;s time to enter the room, or in your case, to make your presence felt on search engines. Our team takes care of everything from keyword optimisation to high-quality content creation, just like you&apos;d prepare your elevator pitch and choose your conversations carefully at a networking event."
-        submenu4="4. Optimise"
-        subdesc4="After the initial interactions, you&apos;d think about what went well and where you could improve. We do the same with your SEO, continuously fine-tuning based on performance data to make sure you&apos;re not just in the room but drawing a crowd."
-        submenu5="5. Scale"
-        subdesc5="Once you&apos;ve made a name for yourself at one event, you&apos;d look to attend others and expand your network. Similarly, once your SEO starts yielding results, we explore opportunities to target new keywords, and audiences and even break into different markets"
-        lastdesc="    Much like how you become a well-known figure in a networking room by being at the right place, saying the right things and connecting with the right people, our Infinity-5 Framework ensures your website gains the reputation and visibility it deserves in the digital world."
-      />
-      <Section2 title="Generate Better Roi with Proven Marketing Strategies"
-        desc1="Learn The Proven Strategies Your Competitors Are Using To Dominate The Market."
-        desc2="Are you tired of spending money on marketing strategies or digital channels that you&apos;re unsure will be effective and provide a return on investment? Have you invested in marketing campaigns and hoped for positive results, but have been disappointed? We have the solutions for all of your concerns. Our strategies have generated over 2,480 page 1 Google rankings, grown organic traffic by more than 140% and delivered more than 8,000+ high-quality leads, helping businesses like yours to steal market share from their competitors and dominate the online space in just a matter of months!"
-      />
-      <Section3 />
+      <Drawer
+  title="Revolutionize Your Online Presence with Web Design"
+  button="Explore Our Web Design Solutions"
+  desc1="Welcome to Pie-Bond's Web Design Studio, where we craft intelligent and visually stunning websites that captivate your audience. Unlike static online platforms, we transform casual visitors into loyal customers. If we don't elevate your online presence, our service is on us."
+  Img1={seoimg}
+  title2="Our 5-stage process for effective Web Design services:"
+  submenu1="1. Research & Strategy"
+  subdesc1="Explore optimal design concepts by analyzing industry trends and developing distinctive layouts for your digital presence."
+  submenu2="2. Track & Analyze"
+  subdesc2="Leverage advanced analytics tools to assess user engagement and gather valuable insights for continuous improvement."
+  submenu3="3. Design & Develop"
+  subdesc3="Construct and implement attention-grabbing visuals, seamless navigation, and interactive elements for your online platform."
+  submenu4="4. Optimize & Refine"
+  subdesc4="Experiment with various design elements, user experiences, and calls-to-action to refine and enhance user engagement."
+  submenu5="5. Launch & Expand"
+  subdesc5="Grow your online reach by implementing successful strategies, similar to expanding your digital footprint across various channels."
+  lastdesc="Attain the recognition and visibility your website deserves in the digital landscape. Ready to elevate your brand's online experience? Explore Pie-Bond's Web Design Studio now!"
+/>
+
+<Section2
+  title="Maximize Your Returns with Proven Web Design Strategies"
+  desc1="Unlock the secrets of proven web design strategies that empower your brand to outshine competitors and achieve remarkable ROI. Tired of navigating uncertain marketing channels? Our solutions have propelled over 2,480 websites to page 1 on Google, witnessed a 140% surge in organic traffic, and delivered a staggering 8,000+ high-quality leads. Seize market dominance and conquer the online landscape in a matter of months!"
+  desc2="Key Features:
+
+  - Proven strategies for guaranteed web design results
+  - Over 2,480 websites on page 1 of Google
+  - 140% growth in organic website traffic
+  - 8,000+ high-quality leads delivered
+  - Ready to elevate your online presence? Explore more about our proven web design strategies now!"
+/>
+
+<Section3
+  maintitle="Empowering Your Digital Journey with a Proven Web Design Framework"
+  title="Research & Strategy"
+  desc="Embark on a journey of discovery as we uncover effective design tactics from leading websites. Analyze your business goals, set objectives, and craft a bespoke web design strategy encompassing at least five key themes."
+  title2="Track & Analyze"
+  desc2="Leverage our analytics-driven approach to assess user engagement and gather actionable insights. We track the performance of your website, allowing for continuous improvement and informed decision-making."
+  title3="Design & Develop"
+  desc3="Rely on our team of skilled web designers to create the assets needed to bring your strategy to life. We focus on developing visually appealing, user-friendly, and responsive websites that enhance your online presence."
+  title4="Optimize & Refine"
+  desc4="Engage in extensive testing to identify the design elements and user experiences that resonate best with your audience. Gain invaluable insights into what drives success for your brand and refine your website for optimal performance."
+  title5="Launch & Expand"
+  desc5="Elevate your online presence by implementing successful design strategies. Once desired results are achieved, we work with you to scale up, ensuring sustained growth and increased visibility in the digital landscape."
+/>
+
       {/* <Price/> */}
-      <Faq/>
+      <Faq
+  q1="Which digital platforms offer effective marketing opportunities for websites?"
+  a1="The effectiveness depends on your website, industry, and target audience. We strategically leverage platforms where your potential customers actively engage to ensure optimal results."
+  q2="What digital channels do you specialize in for web marketing?"
+  a2="Our expertise lies in platforms such as Google, Facebook, and Instagram. We stay adaptable to emerging channels, ensuring that your website stands out and achieves exceptional outcomes."
+  q3="How does your web marketing service function?"
+  a3="From initial strategy consultation to comprehensive online presence management, our services encompass strategic planning, content creation, user engagement, and detailed reporting. We tailor our approach to meet the diverse requirements of each project."
+  q4="In which industries have you provided web marketing services?"
+  a4="We've collaborated across various industries, ranging from global manufacturers to local service enterprises. Explore our case studies for insights into the diverse expertise we bring to each project."
+  q5="When is the ideal time to invest in web marketing for my website?"
+  a5="Transparency is key in web marketing. Typically, the primary goal is to boost website visibility, credibility, and trust. While generating leads or sales may require additional strategies like advertising or a substantial following, we can help you build a loyal audience. Once established, this fan base can be transformed into a lucrative channel, echoing our success with other clients."
+/>
+
     <Footer/>
     </div>
   );

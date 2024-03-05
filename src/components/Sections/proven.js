@@ -1,4 +1,3 @@
-
 export default function proven( params ) {
     return (
         <div className=" lg:h-96 w-screen justify-center items-center h-auto lg:p-20 bg-black text-white ">
@@ -9,10 +8,10 @@ export default function proven( params ) {
                     </div>
                     <div className="flex flex-col gap-10 justify-between">
                         <h1 className="lg:text-2xl text-lg">
-                            Proven Strategies
+                            {params.title1}
                         </h1>
                         <p className="text-balance text-sm ">
-                            Explore our collection of tried-and-true digital marketing strategies, backed by data, to help your business thrive online
+                            {params.desc1}
                         </p>
                     </div>
                 </div>
@@ -22,10 +21,10 @@ export default function proven( params ) {
                     </div>
                     <div className="flex flex-col gap-10 justify-between">
                         <h1 className="lg:text-2xl text-lg">
-                            Proven Strategies
+                            {params.title2}
                         </h1>
                         <p className="text-balance text-sm ">
-                            Explore our collection of tried-and-true digital marketing strategies, backed by data, to help your business thrive online
+                            {params.desc2}
                         </p>
                     </div>
                 </div>
@@ -35,10 +34,10 @@ export default function proven( params ) {
                     </div>
                     <div className="flex flex-col gap-10 justify-between">
                         <h1 className="lg:text-2xl text-lg">
-                            Proven Strategies
+                            {params.title3}
                         </h1>
-                        <p className="text-balance text-sm ">
-                            Explore our collection of tried-and-true digital marketing strategies, backed by data, to help your business thrive online
+                        <p className=" text-sm ">
+                            {params.desc3}
                         </p>
                     </div>
                 </div>

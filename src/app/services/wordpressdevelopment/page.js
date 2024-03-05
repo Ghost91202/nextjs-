@@ -1,59 +1,141 @@
-
-
-import Footer from '@/components/footer/footer';
-import Banner from "../../../components/hero/hero2"
-import Navbar from "@/components/navbar/mainnav"
-import Faq from "../../../components/faq/faq"
-import When from "../../../components/when/page"
-import ServiceCard from "../../../components/servicesslider/sslider"
-import Proven from "../../../components/Sections/proven"
-import Drawer from "../../../components/drawer/drawer"
-import Faq1 from "../../../components/faq/faq2"
-import seoimg from "../../../assets/unds.jpg"
-import Section2 from '@/components/services/sections/section2';
-import Section3 from '@/components/services/sections/section3';
-import Price from "../../../components/services/price/price"
+import Footer from "@/components/footer/footer";
+import Banner from "../../../components/hero/hero2";
+import Navbar from "@/components/navbar/mainnav";
+import Faq from "../../../components/faq/faq";
+import When from "../../../components/when/page";
+import ServiceCard from "../../../components/servicesslider/sslider";
+import Proven from "../../../components/Sections/proven";
+import Drawer from "../../../components/drawer/drawer";
+import Faq1 from "../../../components/faq/faq2";
+import seoimg from "../../../assets/unds.jpg";
+import Section2 from "@/components/services/sections/section2";
+import Section3 from "@/components/services/sections/section3";
+import Price from "../../../components/services/price/price";
 export default function Home() {
   const faqData = [
-    { question: 'SEO Audits: In-Depth Analysis for Tailored Strategies', answer: 'Our SEO audits go beyond automated checks. Each audit is conducted by an experienced team member, covering on-site and off-site SEO, user experience, content analysis and competitor analysis, providing a comprehensive roadmap in our Performance Tracker for your digital success.' },
-    { question: 'Content Audit: Gaining a Competitive Edge', answer: 'We conduct thorough competitor backlink audits to uncover their strategies and identify untapped opportunities. This insight allows us to integrate effective tactics into your SEO campaign, ensuring you stay ahead in the digital race.' },
-    { question: 'Content Optimisation: Maximising Your Digital Reach', answer: 'Content optimisation ensures your content ranks high in both direct and related searches. We use advanced SEO tools, such as SE Ranking and AHREF, and manual analysis to enhance your content&apos;s visibility, driving traffic and conversions' },
-    { question: 'What is FAQ #4?', answer: 'Answer to FAQ #4' },
-    { question: 'What is FAQ #5?', answer: 'Answer to FAQ #5' },
+    {
+      question:
+        "WordPress Development: How do you ensure effective website development?",
+      answer:
+        "Our team of SEO experts follows industry-leading practices in WordPress development, creating websites that are not only visually appealing but also optimized for search engines. We prioritize user experience, responsive design, and efficient coding to ensure your website ranks well and engages visitors effectively.",
+    },
+    {
+      question: "Website Structure: How do you organize and structure WordPress websites?",
+      answer:
+        "We implement a strategic approach to website organization, including clear navigation, proper categorization, and user-friendly layouts. Our development process focuses on creating a well-structured website that enhances user experience and facilitates easy navigation for both users and search engines.",
+    },
+    {
+      question:
+        "SEO Integration: How do you ensure WordPress websites are search engine friendly?",
+      answer:
+        "We integrate advanced SEO techniques into our WordPress development, optimizing meta tags, content structure, and other on-page elements. This ensures that your website is easily discoverable by search engines, leading to improved visibility and higher organic traffic.",
+    },
+    {
+      question:
+        "Performance Optimization: What steps do you take to optimize website performance?",
+      answer:
+        "Our WordPress development includes performance optimization measures, such as image compression, minification of CSS and JavaScript, and caching strategies. This results in faster loading times, improved user experience, and favorable search engine rankings.",
+    },
+    {
+      question: "Customization: How can customization benefit my WordPress website?",
+      answer:
+        "Customization in WordPress development allows for tailored solutions that meet your specific business needs. We create bespoke themes, plugins, and features, providing a unique online presence that aligns with your brand identity and enhances overall website performance.",
+    },
   ];
+  
+
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
       <Banner />
-      <Proven />
-      <ServiceCard />
-      <Faq1 faqData={faqData}/>
-      <Drawer title="Understanding SEO Services"
-        button="Understand Our Seo Service"
-        desc1="Think of SEO as the digital equivalent of attending a high-stakes networking event. In the room (search engine rankings),
-            everyone&apos;s jostling for the attention of a few key people (your target audience). Some have the advantage of being well-known, others are newcomers. Like you at a networking event, your website starts as one among many. But just as your interactions at the event can turn you into a &apos;must-meet&apos; figure, our SEO strategies ensure your website becomes a &apos;must-visit&apos; destination on the digital landscape."
-        Img1={seoimg}
-        title2="Our 5-stage process for effective SEO services:"
-        submenu1="1. Research & Plan"
-        subdesc1="Just as you would study the guest list and topics before a networking event, we start by understanding your business landscape and competitors. Knowing who and what you&apos;re up against enables us to position you strategically, so you&apos;re not just a face in the crowd but a key player in your field."
-        submenu2="2. Track & Measure"
-        subdesc2="At a networking event, you&apos;d take note of who you spoke with, who showed interest and who you connected with. Our SEO analytics are the digital equivalent, providing real-time data on who&apos;s visiting your site, what they&apos;re interested in, and how they found you in the first place. To pair with these analytic tools we also set certain goals that we can measure the success of our SEO efforts against so that we know that we are on the right path"
-        submenu3="3. Execute"
-        subdesc3="Now, it&apos;s time to enter the room, or in your case, to make your presence felt on search engines. Our team takes care of everything from keyword optimisation to high-quality content creation, just like you&apos;d prepare your elevator pitch and choose your conversations carefully at a networking event."
-        submenu4="4. Optimise"
-        subdesc4="After the initial interactions, you&apos;d think about what went well and where you could improve. We do the same with your SEO, continuously fine-tuning based on performance data to make sure you&apos;re not just in the room but drawing a crowd."
-        submenu5="5. Scale"
-        subdesc5="Once you&apos;ve made a name for yourself at one event, you&apos;d look to attend others and expand your network. Similarly, once your SEO starts yielding results, we explore opportunities to target new keywords, and audiences and even break into different markets"
-        lastdesc="    Much like how you become a well-known figure in a networking room by being at the right place, saying the right things and connecting with the right people, our Infinity-5 Framework ensures your website gains the reputation and visibility it deserves in the digital world."
-      />
-      <Section2 title="Generate Better Roi with Proven Marketing Strategies"
-        desc1="Learn The Proven Strategies Your Competitors Are Using To Dominate The Market."
-        desc2="Are you tired of spending money on marketing strategies or digital channels that you&apos;re unsure will be effective and provide a return on investment? Have you invested in marketing campaigns and hoped for positive results, but have been disappointed? We have the solutions for all of your concerns. Our strategies have generated over 2,480 page 1 Google rankings, grown organic traffic by more than 140% and delivered more than 8,000+ high-quality leads, helping businesses like yours to steal market share from their competitors and dominate the online space in just a matter of months!"
-      />
-      <Section3 />
+      <Proven
+  title1="Proven WordPress Solutions"
+  desc1="Discover a range of proven strategies specifically tailored for WordPress development. Our meticulous approach, backed by data, is designed to fortify your online presence and deliver tangible results for your business."
+  title2="Certified WordPress Developers"
+  desc2="Harness the knowledge and skills of our certified WordPress developers dedicated to optimizing your website's performance. Stay at the forefront of WordPress trends with a team committed to delivering top-notch solutions for your business."
+  title3="Guaranteed SEO Results"
+  desc3="Experience the impact of our unwavering commitment to SEO results. We blend expertise, innovation, and personalized SEO strategies to ensure your success in the dynamic digital landscape."
+/>
+
+<ServiceCard
+  title="Expert WordPress Development Services"
+  desc="In the ever-evolving digital landscape, a robust online presence is vital for business growth. At [Your Company Name], we specialize in WordPress development services that elevate your brand's digital footprint. Explore our tailored solutions designed to enhance user experience, improve search engine visibility, and drive tangible results for your business."
+  cardTitle1="Strategic Website Development"
+  desc1="Elevate your brand with strategically developed WordPress websites. Our team excels in crafting user-friendly, SEO-optimized websites tailored to your business goals and target audience."
+  cardTitle2="Customized Theme Integration"
+  desc2="Enhance your website's aesthetics and functionality with customized theme integration. Our WordPress developers ensure seamless theme implementation that aligns with your brand identity."
+  cardTitle3="SEO-Friendly Coding Practices"
+  desc3="Improve search engine rankings with our SEO-friendly coding practices. We prioritize clean code, meta tag optimization, and other on-page SEO elements for better visibility."
+  cardTitle4="Performance Optimization"
+  desc4="Optimize website performance with strategies like image compression and efficient coding. Our focus on speed and performance ensures an excellent user experience and favorable search engine rankings."
+  cardTitle5="Plugin Development and Integration"
+  desc5="Extend your website's functionality with custom plugin development and integration. Our developers create bespoke plugins to meet your specific business requirements."
+  cardTitle6="Responsive Design for All Devices"
+  desc6="Ensure your website looks stunning on all devices with our responsive design approach. We prioritize mobile responsiveness, enhancing user experience and improving search engine rankings."
+/>
+
+      <Faq1 faqData={faqData} />
+      <Drawer
+  title="Unlocking WordPress Development"
+  button="Explore Our WordPress Solutions"
+  desc1="Discover [Your Company Name]'s WordPress Development services, your gateway to a dynamic online presence. Unlike static websites, we create interactive and user-friendly experiences that convert visitors into clients. If we don't elevate your online presence, our service is on us."
+  Img1={seoimg} 
+  title2="Our 5-stage process for effective WordPress Development services:"
+  submenu1="1. Research & Planning"
+  subdesc1="Conduct in-depth research and planning to identify optimal website structures and designs based on industry trends and user preferences."
+  submenu2="2. Tracking & Measurement"
+  subdesc2="Implement tracking tools to measure website engagement, user behavior, and other essential metrics for continuous improvement."
+  submenu3="3. Execution"
+  subdesc3="Develop and deploy attention-grabbing visuals, user-friendly layouts, and efficient coding for a seamless online experience."
+  submenu4="4. Optimization"
+  subdesc4="Experiment with various elements, conduct A/B testing, and optimize your website for performance and search engine visibility."
+  submenu5="5. Scaling"
+  subdesc5="Expand your online presence by implementing successful strategies, similar to extending your digital footprint across various platforms."
+  lastdesc="Elevate your brand's visibility and credibility in the digital landscape. Ready to amplify your online presence? Explore [Your Company Name]'s WordPress Development solutions now!"
+/>
+
+<Section2
+  title="Maximize ROI with Proven WordPress Development Strategies"
+  desc1="Explore the proven strategies that leading businesses use to dominate the digital landscape and achieve remarkable ROI. Tired of uncertainty in your online presence? Our WordPress development solutions have resulted in over 2,480 top-ranking Google pages, a 140% boost in organic traffic, and the delivery of 8,000+ high-quality leads. Claim your market share and establish online dominance in just a matter of months!"
+  desc2="Key Highlights:
+
+  - Proven strategies for guaranteed WordPress development results
+  - Over 2,480 top-ranking Google pages
+  - 140% growth in organic traffic
+  - 8,000+ high-quality leads delivered
+  - Ready to elevate your online presence? Learn more about our proven WordPress development strategies now!"
+/>
+
+<Section3
+  maintitle="Unlocking Success in WordPress Development with Our Proven Framework"
+  title="Research & Plan"
+  desc="Explore proven development tactics from industry leaders. Analyze your business goals, set targets, and devise a tailored WordPress development strategy with at least five key themes."
+  title2="Track & Measure"
+  desc2="Implement tracking tools to gauge the effectiveness of your WordPress development strategy. Analyze user engagement, set measurable targets, and refine your approach based on valuable data."
+  title3="Execute"
+  desc3="Leverage our team of skilled WordPress developers to bring your strategy to life. Develop and implement the necessary assets to optimize your website and expand your online presence."
+  title4="Optimize"
+  desc4="Conduct thorough testing to identify what resonates best with your audience. Gain invaluable insights into what drives success for your brand and optimize your WordPress development strategy accordingly."
+  title5="Scale"
+  desc5="Amplify your online presence by scaling up successful WordPress development strategies once desired results are achieved. Expand your digital footprint and elevate your brand in the competitive online landscape."
+/>
+
       {/* <Price/> */}
-      <Faq/>
-    <Footer/>
+      <Faq
+  q1="Which WordPress features enhance effective website marketing?"
+  a1="The effectiveness of website marketing on WordPress depends on various features and plugins tailored to your business needs. We adeptly utilize features like SEO-friendly permalinks, content management, and responsive design for optimal marketing outcomes."
+  q2="Which WordPress plugins and tools do you integrate for marketing purposes?"
+  a2="Our team excels in integrating WordPress plugins like Yoast SEO, MonsterInsights, and social media sharing tools. We stay updated with the latest tools, ensuring your website is equipped for effective digital marketing strategies."
+  q3="How do your WordPress development services contribute to digital marketing strategies?"
+  a3="From strategic website planning to comprehensive development, we specialize in crafting WordPress solutions that enhance digital marketing efforts. This includes optimizing website performance, implementing SEO best practices, and ensuring a seamless user experience."
+  q4="In which industries have you implemented WordPress solutions for digital marketing?"
+  a4="Our WordPress development services have been applied across various industries, from e-commerce to service-oriented businesses. Explore our case studies for insights into how we've successfully integrated WordPress into digital marketing strategies."
+  q5="When should I consider WordPress for effective digital marketing?"
+  a5="WordPress is an ideal platform for digital marketing when you seek a flexible, SEO-friendly, and scalable solution. It's particularly beneficial for content-driven marketing strategies. We can guide you on harnessing WordPress's power to maximize your digital marketing impact."
+/>
+
+
+      <Footer />
     </div>
   );
 }

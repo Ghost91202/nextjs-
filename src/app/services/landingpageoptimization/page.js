@@ -1,59 +1,140 @@
-
-
-import Footer from '@/components/footer/footer';
-import Banner from "../../../components/hero/hero2"
-import Navbar from "@/components/navbar/mainnav"
-import Faq from "../../../components/faq/faq"
-import When from "../../../components/when/page"
-import ServiceCard from "../../../components/servicesslider/sslider"
-import Proven from "../../../components/Sections/proven"
-import Drawer from "../../../components/drawer/drawer"
-import Faq1 from "../../../components/faq/faq2"
-import seoimg from "../../../assets/unds.jpg"
-import Section2 from '@/components/services/sections/section2';
-import Section3 from '@/components/services/sections/section3';
-import Price from "../../../components/services/price/price"
+import Footer from "@/components/footer/footer";
+import Banner from "../../../components/hero/hero2";
+import Navbar from "@/components/navbar/mainnav";
+import Faq from "../../../components/faq/faq";
+import When from "../../../components/when/page";
+import ServiceCard from "../../../components/servicesslider/sslider";
+import Proven from "../../../components/Sections/proven";
+import Drawer from "../../../components/drawer/drawer";
+import Faq1 from "../../../components/faq/faq2";
+import seoimg from "../../../assets/unds.jpg";
+import Section2 from "@/components/services/sections/section2";
+import Section3 from "@/components/services/sections/section3";
+import Price from "../../../components/services/price/price";
 export default function Home() {
   const faqData = [
-    { question: 'SEO Audits: In-Depth Analysis for Tailored Strategies', answer: 'Our SEO audits go beyond automated checks. Each audit is conducted by an experienced team member, covering on-site and off-site SEO, user experience, content analysis and competitor analysis, providing a comprehensive roadmap in our Performance Tracker for your digital success.' },
-    { question: 'Content Audit: Gaining a Competitive Edge', answer: 'We conduct thorough competitor backlink audits to uncover their strategies and identify untapped opportunities. This insight allows us to integrate effective tactics into your SEO campaign, ensuring you stay ahead in the digital race.' },
-    { question: 'Content Optimisation: Maximising Your Digital Reach', answer: 'Content optimisation ensures your content ranks high in both direct and related searches. We use advanced SEO tools, such as SE Ranking and AHREF, and manual analysis to enhance your content&apos;s visibility, driving traffic and conversions' },
-    { question: 'What is FAQ #4?', answer: 'Answer to FAQ #4' },
-    { question: 'What is FAQ #5?', answer: 'Answer to FAQ #5' },
-  ];
+    {
+      question:
+        "Landing Page Design: How do you ensure effective landing page optimization?",
+      answer:
+        "Our team of experts follows best practices in landing page optimization, crafting engaging content and using compelling visuals. We also perform A/B testing to optimize headlines, content, and calls-to-action for maximum effectiveness.",
+    },
+    {
+      question: "Conversion Funnel: How do you handle and segment user journeys on landing pages?",
+      answer:
+        "We employ advanced funnel management techniques, including segmentation based on user behavior, demographics, and engagement levels. This ensures targeted and personalized communication, leading to higher conversion rates.",
+    },
+    {
+      question:
+        "Page Load Speed: How do you ensure fast loading times for landing pages?",
+      answer:
+        "We prioritize fast page load speed through optimized coding, efficient hosting, and adhering to industry standards. Our dedicated team actively works to enhance user experience and minimize bounce rates.",
+    },
+    {
+      question:
+        "Analytics and Reporting: What insights do you provide for landing page performance?",
+      answer:
+        "Our analytics cover a range of metrics, including bounce rates, conversion rates, user interactions, and more. We present comprehensive reports with actionable insights, allowing you to refine and improve your future landing page optimization strategies.",
+    },
+    {
+      question: "Automation: How can automation benefit my landing page optimization?",
+      answer:
+        "Automation streamlines your optimization efforts by adapting content based on user behavior, preferences, and triggers. It saves time, increases relevance, and enhances overall landing page efficiency, leading to improved results.",
+    },
+];
+
+
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
       <Banner />
-      <Proven />
-      <ServiceCard />
-      <Faq1 faqData={faqData}/>
-      <Drawer title="Understanding SEO Services"
-        button="Understand Our Seo Service"
-        desc1="Think of SEO as the digital equivalent of attending a high-stakes networking event. In the room (search engine rankings),
-            everyone&apos;s jostling for the attention of a few key people (your target audience). Some have the advantage of being well-known, others are newcomers. Like you at a networking event, your website starts as one among many. But just as your interactions at the event can turn you into a &apos;must-meet&apos; figure, our SEO strategies ensure your website becomes a &apos;must-visit&apos; destination on the digital landscape."
-        Img1={seoimg}
-        title2="Our 5-stage process for effective SEO services:"
-        submenu1="1. Research & Plan"
-        subdesc1="Just as you would study the guest list and topics before a networking event, we start by understanding your business landscape and competitors. Knowing who and what you&apos;re up against enables us to position you strategically, so you&apos;re not just a face in the crowd but a key player in your field."
-        submenu2="2. Track & Measure"
-        subdesc2="At a networking event, you&apos;d take note of who you spoke with, who showed interest and who you connected with. Our SEO analytics are the digital equivalent, providing real-time data on who&apos;s visiting your site, what they&apos;re interested in, and how they found you in the first place. To pair with these analytic tools we also set certain goals that we can measure the success of our SEO efforts against so that we know that we are on the right path"
-        submenu3="3. Execute"
-        subdesc3="Now, it&apos;s time to enter the room, or in your case, to make your presence felt on search engines. Our team takes care of everything from keyword optimisation to high-quality content creation, just like you&apos;d prepare your elevator pitch and choose your conversations carefully at a networking event."
-        submenu4="4. Optimise"
-        subdesc4="After the initial interactions, you&apos;d think about what went well and where you could improve. We do the same with your SEO, continuously fine-tuning based on performance data to make sure you&apos;re not just in the room but drawing a crowd."
-        submenu5="5. Scale"
-        subdesc5="Once you&apos;ve made a name for yourself at one event, you&apos;d look to attend others and expand your network. Similarly, once your SEO starts yielding results, we explore opportunities to target new keywords, and audiences and even break into different markets"
-        lastdesc="    Much like how you become a well-known figure in a networking room by being at the right place, saying the right things and connecting with the right people, our Infinity-5 Framework ensures your website gains the reputation and visibility it deserves in the digital world."
-      />
-      <Section2 title="Generate Better Roi with Proven Marketing Strategies"
-        desc1="Learn The Proven Strategies Your Competitors Are Using To Dominate The Market."
-        desc2="Are you tired of spending money on marketing strategies or digital channels that you&apos;re unsure will be effective and provide a return on investment? Have you invested in marketing campaigns and hoped for positive results, but have been disappointed? We have the solutions for all of your concerns. Our strategies have generated over 2,480 page 1 Google rankings, grown organic traffic by more than 140% and delivered more than 8,000+ high-quality leads, helping businesses like yours to steal market share from their competitors and dominate the online space in just a matter of months!"
-      />
-      <Section3 />
+      <Proven
+    title1="Proven Techniques"
+    desc1="Discover a range of proven landing page optimization tactics, meticulously designed and backed by data. These techniques are tailored to strengthen your online presence and drive tangible results for your business."
+    title2="Optimization Specialists"
+    desc2="Harness the knowledge and skills of our certified professionals who are dedicated to optimizing your landing page performance. Stay ahead of industry trends with a team committed to delivering top-notch solutions for your business."
+    title3="Measurable Improvements"
+    desc3="Witness the impact of our unwavering commitment to results. We blend expertise, innovation, and personalized landing page optimization strategies to ensure measurable improvements in the dynamic digital landscape."
+/>
+
+<ServiceCard
+    title="Expert Landing Page Optimization Services in India"
+    desc="In the dynamic world of digital marketing, landing page optimization is a crucial element for enhancing user engagement and achieving business growth. At Pie-Bond, we recognize the pivotal role of optimized landing pages and offer specialized services tailored for your brand's success. Experience a strategic approach to landing page optimization that ensures your brand capitalizes on diverse opportunities, resulting in significant outcomes."
+    cardTitle1="Strategic Landing Page Design"
+    desc1="Elevate your brand with strategically designed landing pages, leveraging our expertise in optimizing headlines, content, and calls-to-action for optimal user engagement."
+    cardTitle2="Personalized User Journeys"
+    desc2="Harness the potential of personalized user journeys to streamline the conversion funnel. Our experts design tailored experiences, enhancing relevance and driving conversions."
+    cardTitle3="Data-Driven Decision-Making"
+    desc3="Dive into data-centric decision-making with our robust analytics. Gain insights into landing page performance, user interactions, and optimization effectiveness for continuous improvement."
+    cardTitle4="Segmented User Journeys"
+    desc4="Optimize your user journeys with advanced segmentation techniques. Deliver targeted experiences that resonate with specific audience segments, ensuring higher conversion rates."
+    cardTitle5="Fast Loading Pages and Testing"
+    desc5="Ensure your landing pages load quickly across devices. Our team prioritizes fast page load speed and A/B testing to maximize the impact of your landing page optimization efforts."
+    cardTitle6="Compelling Content Optimization"
+    desc6="Optimize your landing page content for maximum impact. Our creative team blends persuasive copywriting with visually appealing designs to drive meaningful interactions and strengthen your brand presence."
+/>
+
+      <Faq1 faqData={faqData} />
+      <Drawer
+    title="Understanding Landing Page Optimization"
+    button="Explore Our Landing Page Optimization"
+    desc1="Discover Pie-Bond's Landing Page Optimization, your strategic toolkit for maximizing user engagement and driving conversions. Unlike generic approaches, we tailor our optimization strategies to elevate your brand's online performance. If we don't enhance your landing page effectiveness, our service is free."
+    Img1={seoimg} 
+    title2="Our 5-stage process for effective Landing Page Optimization services:"
+    submenu1="1. Research & Plan"
+    subdesc1="Analyze user behavior and plan optimal user journeys, ensuring your landing pages resonate with your target audience."
+    submenu2="2. Track & Measure"
+    subdesc2="Utilize tracking tools to assess user interactions and gather valuable data for continuous improvement."
+    submenu3="3. Execute"
+    subdesc3="Craft and implement optimized headlines, content, and calls-to-action for maximum user engagement on your landing pages."
+    submenu4="4. Optimize"
+    subdesc4="Experiment with various design elements, content variations, and user flows to refine and enhance landing page performance."
+    submenu5="5. Scale"
+    subdesc5="Expand the impact of your optimized landing pages across different campaigns and channels for sustained growth."
+    lastdesc="Achieve the visibility and conversions your landing pages deserve in the digital landscape."
+    />
+
+<Section2
+    title="Maximize ROI with Proven Landing Page Optimization Strategies"
+    desc1="Unlock the proven strategies that industry leaders are employing to dominate the market and achieve exceptional ROI. Are you weary of unpredictable marketing channels? Our solutions have resulted in over 2,480 high-converting landing pages, a 140% surge in organic traffic, and the delivery of 8,000+ high-quality leads. Seize market share and establish a dominant online presence in just months!"
+    desc2="Key Highlights:
+
+    - Proven strategies for guaranteed landing page optimization results
+    - Over 2,480 high-converting landing pages
+    - 140% growth in organic traffic
+    - 8,000+ high-quality leads delivered
+    - Ready to elevate your landing page optimization game? Learn more about our proven strategies now!"
+/>
+
+<Section3
+    maintitle="With our tried-and-tested framework, we confidently assure success in landing page optimization"
+    title="Research & Plan"
+    desc="Uncover proven optimization tactics from top performers. Analyze your landing pages, set goals, and craft a tailored optimization strategy with at least five key areas of focus."
+    title2="Track & Measure"
+    desc2="Implement tracking tools to assess user interactions and gather valuable data for continuous improvement. Measure the effectiveness of your optimization efforts."
+    title3="Execute"
+    desc3="Leverage our team of landing page optimization experts to develop assets needed to execute your strategy and enhance user engagement."
+    title4="Optimize"
+    desc4="Conduct extensive testing to determine what resonates best, gaining invaluable insights into what drives success for your landing pages."
+    title5="Scale"
+    desc5="Expand the impact of your optimized landing pages by scaling up successful strategies once desired results are achieved."
+/>
+
       {/* <Price/> */}
-      <Faq/>
-    <Footer/>
+      <Faq
+    q1="What landing page optimization strategies work best for different industries?"
+    a1="The effectiveness of strategies varies based on the industry, target audience, and business goals. We tailor our approach to align with your specific requirements, ensuring optimal results for your landing pages."
+    q2="Which aspects of landing page optimization do you focus on?"
+    a2="Our expertise spans various elements, including headline optimization, content refinement, call-to-action enhancements, and overall user experience improvements. We analyze and optimize each aspect to maximize the impact of your landing pages."
+    q3="How do your landing page optimization services contribute to improved conversions?"
+    a3="From A/B testing to user journey analysis, our services are designed to enhance user engagement and drive conversions. We focus on creating a seamless and compelling experience that encourages visitors to take desired actions on your landing pages."
+    q4="Can you provide examples of industries you've worked with in landing page optimization?"
+    a4="We've successfully collaborated across a range of industries, from e-commerce and technology to healthcare and finance. Check out our case studies for insights into our diverse expertise in optimizing landing pages for different sectors."
+    q5="When is the right time to invest in landing page optimization?"
+    a5="Landing page optimization is beneficial at any stage of your online presence. Whether you're launching a new product, running a campaign, or looking to improve ongoing performance, our services adapt to your needs. We help you refine and optimize your landing pages for sustained success."
+/>
+
+      <Footer />
     </div>
   );
 }

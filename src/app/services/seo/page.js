@@ -1,59 +1,142 @@
-
-
-import Footer from '@/components/footer/footer';
-import Banner from "../../../components/hero/hero2"
-import Navbar from "@/components/navbar/mainnav"
-import Faq from "../../../components/faq/faq"
-import When from "../../../components/when/page"
-import ServiceCard from "../../../components/servicesslider/sslider"
-import Proven from "../../../components/Sections/proven"
-import Drawer from "../../../components/drawer/drawer"
-import Faq1 from "../../../components/faq/faq2"
-import seoimg from "../../../assets/unds.jpg"
-import Section2 from '@/components/services/sections/section2';
-import Section3 from '@/components/services/sections/section3';
-import Price from "../../../components/services/price/price"
+import Footer from "@/components/footer/footer";
+import Banner from "../../../components/hero/hero2";
+import Navbar from "@/components/navbar/mainnav";
+import Faq from "../../../components/faq/faq";
+import When from "../../../components/when/page";
+import ServiceCard from "../../../components/servicesslider/sslider";
+import Proven from "../../../components/Sections/proven";
+import Drawer from "../../../components/drawer/drawer";
+import Faq1 from "../../../components/faq/faq2";
+import seoimg from "../../../assets/unds.jpg";
+import Section2 from "@/components/services/sections/section2";
+import Section3 from "@/components/services/sections/section3";
+import Price from "../../../components/services/price/price";
 export default function Home() {
   const faqData = [
-    { question: 'SEO Audits: In-Depth Analysis for Tailored Strategies', answer: 'Our SEO audits go beyond automated checks. Each audit is conducted by an experienced team member, covering on-site and off-site SEO, user experience, content analysis and competitor analysis, providing a comprehensive roadmap in our Performance Tracker for your digital success.' },
-    { question: 'Content Audit: Gaining a Competitive Edge', answer: 'We conduct thorough competitor backlink audits to uncover their strategies and identify untapped opportunities. This insight allows us to integrate effective tactics into your SEO campaign, ensuring you stay ahead in the digital race.' },
-    { question: 'Content Optimisation: Maximising Your Digital Reach', answer: 'Content optimisation ensures your content ranks high in both direct and related searches. We use advanced SEO tools, such as SE Ranking and AHREF, and manual analysis to enhance your content&apos;s visibility, driving traffic and conversions' },
-    { question: 'What is FAQ #4?', answer: 'Answer to FAQ #4' },
-    { question: 'What is FAQ #5?', answer: 'Answer to FAQ #5' },
+    {
+      question:
+        "SEO Strategies: How do you ensure effective search engine optimization?",
+      answer:
+        "Our team of SEO experts employs proven strategies, including on-page optimization, keyword research, and technical audits. We focus on enhancing your website's visibility and driving organic traffic for optimal results.",
+    },
+    {
+      question: "Link Building: What link-building strategies do you use?",
+      answer:
+        "We implement effective link-building strategies to boost your website's authority. Our approach involves acquiring high-quality backlinks from reputable sources, enhancing your site's credibility and improving search engine rankings.",
+    },
+    {
+      question:
+        "Keyword Research: How do you identify relevant keywords for my business?",
+      answer:
+        "Our comprehensive keyword research involves analyzing your industry, competitors, and target audience. We identify relevant keywords that align with your business goals, optimizing your content for improved search engine ranking.",
+    },
+    {
+      question:
+        "Technical SEO Audits: How do you ensure optimal website performance?",
+      answer:
+        "We conduct thorough technical SEO audits to identify and resolve any issues affecting your website's performance. This includes addressing issues related to site speed, mobile optimization, and crawlability for a seamless user experience.",
+    },
+    {
+      question: "Content Optimization: How do you optimize website content?",
+      answer:
+        "Our content optimization strategy focuses on creating high-quality, SEO-friendly content. We ensure that your content is not only engaging for users but also aligned with relevant keywords to enhance search engine visibility.",
+    },
   ];
+  
+
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
       <Banner />
-      <Proven />
-      <ServiceCard />
-      <Faq1 faqData={faqData}/>
-      <Drawer title="Understanding SEO Services"
-        button="Understand Our Seo Service"
-        desc1="Think of SEO as the digital equivalent of attending a high-stakes networking event. In the room (search engine rankings),
-            everyone&apos;s jostling for the attention of a few key people (your target audience). Some have the advantage of being well-known, others are newcomers. Like you at a networking event, your website starts as one among many. But just as your interactions at the event can turn you into a &apos;must-meet&apos; figure, our SEO strategies ensure your website becomes a &apos;must-visit&apos; destination on the digital landscape."
-        Img1={seoimg}
-        title2="Our 5-stage process for effective SEO services:"
-        submenu1="1. Research & Plan"
-        subdesc1="Just as you would study the guest list and topics before a networking event, we start by understanding your business landscape and competitors. Knowing who and what you&apos;re up against enables us to position you strategically, so you&apos;re not just a face in the crowd but a key player in your field."
-        submenu2="2. Track & Measure"
-        subdesc2="At a networking event, you&apos;d take note of who you spoke with, who showed interest and who you connected with. Our SEO analytics are the digital equivalent, providing real-time data on who&apos;s visiting your site, what they&apos;re interested in, and how they found you in the first place. To pair with these analytic tools we also set certain goals that we can measure the success of our SEO efforts against so that we know that we are on the right path"
-        submenu3="3. Execute"
-        subdesc3="Now, it&apos;s time to enter the room, or in your case, to make your presence felt on search engines. Our team takes care of everything from keyword optimisation to high-quality content creation, just like you&apos;d prepare your elevator pitch and choose your conversations carefully at a networking event."
-        submenu4="4. Optimise"
-        subdesc4="After the initial interactions, you&apos;d think about what went well and where you could improve. We do the same with your SEO, continuously fine-tuning based on performance data to make sure you&apos;re not just in the room but drawing a crowd."
-        submenu5="5. Scale"
-        subdesc5="Once you&apos;ve made a name for yourself at one event, you&apos;d look to attend others and expand your network. Similarly, once your SEO starts yielding results, we explore opportunities to target new keywords, and audiences and even break into different markets"
-        lastdesc="    Much like how you become a well-known figure in a networking room by being at the right place, saying the right things and connecting with the right people, our Infinity-5 Framework ensures your website gains the reputation and visibility it deserves in the digital world."
-      />
-      <Section2 title="Generate Better Roi with Proven Marketing Strategies"
-        desc1="Learn The Proven Strategies Your Competitors Are Using To Dominate The Market."
-        desc2="Are you tired of spending money on marketing strategies or digital channels that you&apos;re unsure will be effective and provide a return on investment? Have you invested in marketing campaigns and hoped for positive results, but have been disappointed? We have the solutions for all of your concerns. Our strategies have generated over 2,480 page 1 Google rankings, grown organic traffic by more than 140% and delivered more than 8,000+ high-quality leads, helping businesses like yours to steal market share from their competitors and dominate the online space in just a matter of months!"
-      />
-      <Section3 />
+      <Proven
+  title1="Effective SEO Techniques"
+  desc1="Discover a range of tried-and-true SEO techniques, meticulously crafted and supported by data-driven insights. These strategies are customized to enhance your online visibility and generate measurable outcomes for your business."
+  title2="SEO Specialists"
+  desc2="Harness the expertise and proficiency of our certified SEO professionals devoted to optimizing your website's performance. Stay abreast of industry shifts with a team dedicated to delivering cutting-edge solutions for your online presence."
+  title3="Assured Search Results"
+  desc3="Witness the impact of our steadfast commitment to results in the dynamic world of SEO. We integrate expertise, innovation, and tailored SEO strategies to ensure your success in the ever-evolving digital landscape."
+/>
+
+<ServiceCard
+  title="Expert SEO Services in India"
+  desc="In the rapidly evolving digital landscape, search engine optimization (SEO) emerges as a crucial driver for online visibility and business growth. At Pie-Bond, we recognize the profound impact of SEO and offer specialized services tailored for your brand's exceptional visibility. Experience a strategic approach to SEO that ensures your brand capitalizes on limitless opportunities, resulting in significant online success."
+  cardTitle1="Strategic SEO Campaign Management"
+  desc1="Elevate your brand with meticulously planned SEO campaigns, leveraging our expertise in keyword targeting, content optimization, and effective link building for optimal search engine visibility."
+  cardTitle2="Advanced Technical SEO Implementation"
+  desc2="Optimize your website's technical aspects for search engines. Our experts focus on factors like site speed, mobile-friendliness, and structured data to enhance your website's search engine performance."
+  cardTitle3="Data-Driven SEO Analytics"
+  desc3="Embrace data-driven decision-making with our robust SEO analytics. Gain insights into website performance, user behavior, and keyword effectiveness for continuous improvement in your SEO strategy."
+  cardTitle4="Keyword Research and Targeting"
+  desc4="Refine your SEO strategy with comprehensive keyword research. Target high-value keywords relevant to your business, ensuring that your website ranks prominently in search engine results."
+  cardTitle5="Responsive Website Design for SEO"
+  desc5="Optimize your website for various devices. Our team prioritizes responsive design and usability testing to enhance user experience and improve your website's search engine rankings."
+  cardTitle6="Quality Content Optimization"
+  desc6="Captivate your audience with optimized website content. Our team blends SEO best practices with compelling copywriting to drive meaningful interactions and strengthen your brand's online presence."
+/>
+
+      <Faq1 faqData={faqData} />
+      <Drawer
+  title="Understanding SEO Strategies"
+  button="Explore Our SEO Services"
+  desc1="Discover Pie-Bond's SEO Services, your intelligent navigator for unparalleled online visibility. Unlike static approaches, we transform online visitors into loyal customers. If we don't improve your search rankings, our service is on the house."
+  Img1={seoimg} // Assuming you have an SEO-related image to replace seoimg
+  title2="Our 5-stage process for effective SEO services:"
+  submenu1="1. Research & Strategy"
+  subdesc1="Analyze your market and devise a comprehensive SEO strategy to boost your website's search engine visibility."
+  submenu2="2. Tracking & Analytics"
+  subdesc2="Implement advanced tracking tools to measure performance metrics and gather valuable insights for continuous improvement."
+  submenu3="3. Implementation"
+  subdesc3="Execute strategic SEO elements, optimizing your website's structure, content, and technical aspects for search engine success."
+  submenu4="4. Optimization & Testing"
+  subdesc4="Experiment with various SEO techniques, keywords, and content optimizations to refine and enhance your website's search performance."
+  submenu5="5. Scaling Success"
+  subdesc5="Expand your online presence by implementing proven SEO strategies across multiple channels, ensuring sustainable growth."
+  lastdesc="Attain the recognition and visibility your website deserves in the digital realm.
+
+  Ready to elevate your brand's online visibility? Explore Pie-Bond's SEO Services now!"
+/>
+
+<Section2
+  title="Maximize ROI with Proven SEO Strategies"
+  desc1="Unlock the proven SEO strategies your competitors are leveraging to dominate the market and achieve exceptional ROI. Tired of unpredictable marketing channels? Our solutions have secured over 2,480 page 1 Google rankings, driven a 140% increase in organic traffic, and delivered 8,000+ high-quality leads. Seize market share and establish online dominance in just a few months!"
+  desc2="Key Highlights:
+
+  - Proven strategies for guaranteed SEO results
+  - Over 2,480 page 1 Google rankings achieved
+  - 140% growth in organic traffic
+  - Delivery of 8,000+ high-quality leads
+  - Ready to elevate your SEO game? Explore more about our proven strategies now!"
+/>
+
+<Section3
+  maintitle="With our proven framework, we confidently assure success in SEO strategies"
+  title="Research & Strategy"
+  desc="Unearth effective SEO tactics from your competitors. Analyze your market, set objectives, and devise a customized SEO strategy with at least five key focus areas."
+  title2="Tracking & Analytics"
+  desc2="Implement proven tracking tools to gauge performance metrics. Analyze your business, set targets, and craft a tailored SEO strategy with at least five key focus areas."
+  title3="Implementation"
+  desc3="Leverage our team of SEO experts to execute strategic elements necessary for optimizing your website's structure, content, and technical aspects for search engine success."
+  title4="Optimization & Testing"
+  desc4="Conduct thorough testing to identify the most effective SEO techniques, gaining valuable insights into what drives success for your brand in search engine rankings."
+  title5="Scaling Success"
+  desc5="Expand your online visibility by implementing successful SEO strategies across various channels once desired search engine results are achieved."
+/>
+
       {/* <Price/> */}
-      <Faq/>
-    <Footer/>
+      <Faq
+  q1="Which search engines offer effective marketing opportunities?"
+  a1="The effectiveness depends on your business, industry, and target audience. We strategically focus on search engines where your potential customers are most active and likely to engage."
+  q2="What search engines do you optimize for?"
+  a2="Our team specializes in optimizing for major search engines like Google, Bing, and Yahoo, adapting to changes and emerging platforms to ensure optimal visibility and results."
+  q3="How do your SEO services function?"
+  a3="From initial website analysis to comprehensive SEO strategy implementation, we excel in optimizing website structure, content, and technical aspects. Our services encompass keyword research, on-page optimization, link building, and performance tracking to meet diverse SEO requirements."
+  q4="Which industries have you worked with in SEO?"
+  a4="We collaborate across diverse industries, ranging from global corporations to local businesses. Explore our case studies for insights into our expertise and successful SEO campaigns across various sectors."
+  q5="When is the right time to invest in SEO?"
+  a5="In the realm of SEO, transparency regarding achievable outcomes is crucial. Typically, the primary goal is to enhance online visibility and build credibility and trust. While generating leads or sales may take time, our approach is focused on cultivating a dedicated online presence that can become a lucrative channel over time, similar to our success with other clients."
+/>
+
+      <Footer />
     </div>
   );
 }

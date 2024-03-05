@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { CiCirclePlus } from "react-icons/ci";
 
-const FAQComponent = ({ faqData }) => {
+const FAQComponent = ({ faqData, mainhead }) => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
 
   const handleQuestionClick = (index) => {
@@ -14,7 +14,7 @@ const FAQComponent = ({ faqData }) => {
     <div className="bg-gray-200 lg:p-20 p-10 h-auto flex items-center justify-center font-serif">
       <div className="w-screen flex flex-col lg:gap-10 lg:w-3/4">
 
-          <h1 className="lg:text-4xl text-2xl font-semibold mb-6 text-center">Why Professional SEO Services?</h1>
+          <h1 className="lg:text-4xl text-2xl font-semibold mb-6 text-center">{mainhead}</h1>
           <div className="flex flex-col">
             {faqData.map((faq, index) => (
               <div key={index} className="mb-4 flex flex-col justify-center items-center">

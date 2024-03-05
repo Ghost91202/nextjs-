@@ -3,8 +3,8 @@ import Draggable from 'react-draggable';
 import Slider from './Swiperslide.js';
 
 
-export default function Sliders() {
-  // Set the left and right bounds to restrict dragging
+export default function Sliders(params) {
+  // Set the left and right bounds to restrict dragging Kunal
   const bounds = { left: -2000, right: 400 };
 
   return (
@@ -17,8 +17,8 @@ export default function Sliders() {
                         <h1>SEO</h1>
                     </div>
                     <div className=" flex flex-col gap-10">
-                        <h1 className=" lg:text-4xl  text-lg">Professional SEO Agency in India</h1>
-                        <p className=" lg:w-3/4 text-sm sm:text-lg ">At Pi-bond Digital, we understand the power of SEO in transforming your digital footprint. Our experienced team offers bespoke SEO services, ensuring your website not only engages but converts your audience into loyal customers. Our holistic approach to SEO encompasses technical finesse, content mastery and authoritative link-building, all tailored to your unique business needs.</p>
+                        <h1 className=" lg:text-4xl  text-lg">{params.title}</h1>
+                        <p className=" lg:w-3/4 text-sm sm:text-lg ">{params.desc}</p>
 
                         <button>
                             Schedule a call
@@ -26,7 +26,27 @@ export default function Sliders() {
                     </div>
                 </div>
             </div>
-     <Slider />
+     <Slider
+     cardTitle1={params.cardTitle1}
+     desc1 = {params.desc1}
+
+     cardTitle2={params.cardTitle2}
+     desc2={params.desc2}
+
+     cardTitle3={params.cardTitle3}
+     desc3={params.desc3}
+
+     cardTitle4={params.cardTitle4}
+     desc4={params.desc4}
+
+
+     cardTitle5={params.cardTitle5}
+
+     desc5={params.desc5}
+
+     cardTitle6={params.cardTitle6}
+     desc6={params.desc6}
+     />
 
     </div>
   );

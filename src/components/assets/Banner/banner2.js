@@ -8,7 +8,7 @@ export default function banner2( { icons, title, desc,title2 , link, img } ) {
 
     return (
         <div className=" h-auto overflow-hidden ">
-            <Image src={img} className=" absolute h-96 -z-10" />
+            <Image src={img} alt="" className=" absolute h-96 -z-10" />
             <div className="text-white flex flex-col gap-5 lg:w-3/4 p-4 lg:p-20">
                 <h1 className="lg:text-5xl text-2xl ">{title}
 
