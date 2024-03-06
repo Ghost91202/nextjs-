@@ -9,3 +9,23 @@ font-family: 'Vina Sans', sans-serif;
 width: 100%;
 overflow-x: hidden;
 }
+
+.footer-links {
+    position: relative;
+    text-decoration: none;
+}
+
+  /* Add styles for the arrow icon */
+  .footer-links::after {
+    content: '➜'; /* You can replace this with your preferred arrow icon or use an image */
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  /* Define hover styles for the link */
+  .footer-links:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+  }
