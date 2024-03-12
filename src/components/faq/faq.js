@@ -39,7 +39,7 @@ export default function FAQ(params) {
                     <div className="accordion-item border-b-2 p-5">
                         <input type="checkbox" id="accordion1" />
                         <div className='flex justify-between '>
-                            <label for="accordion1" className="accordion-item-title lg:text-xl text-lg"><span className="icon"></span>{params.q1}</label>
+                            <label for="accordion1" className="accordion-item-title lg:text-xl text-sm"><span className="icon"></span>{params.q1}</label>
                             <MdKeyboardArrowDown className='text-3xl  ' />
                         </div>
                         <div className="accordion-item-desc lg:text-xl text-sm"> {params.a1}
@@ -49,7 +49,7 @@ export default function FAQ(params) {
                     <div className="accordion-item border-b-2 p-5">
                         <input type="checkbox" id="accordion2" />
                         <div className='flex justify-between '>
-                            <label for="accordion2" className="accordion-item-title lg:text-xl text-lg"><span className="icon"></span>{params.q2}</label>
+                            <label for="accordion2" className="accordion-item-title lg:text-xl text-sm"><span className="icon"></span>{params.q2}</label>
                             <MdKeyboardArrowDown className='text-3xl   ' />
                         </div>
                         <div className="accordion-item-desc lg:text-xl text-sm">{params.a2}</div>
@@ -58,7 +58,7 @@ export default function FAQ(params) {
                     <div className="accordion-item border-b-2 p-5">
                         <input type="checkbox" id="accordion3" />
                         <div className='flex justify-between '>
-                            <label for="accordion3" className="accordion-item-title lg:text-xl text-lg"><span className="icon"></span>{params.q3}</label>
+                            <label for="accordion3" className="accordion-item-title lg:text-xl text-sm"><span className="icon"></span>{params.q3}</label>
                             <MdKeyboardArrowDown className='text-3xl  ' />
                         </div>
                         <div className="accordion-item-desc lg:text-xl text-sm ">{params.a3}</div>
@@ -67,7 +67,7 @@ export default function FAQ(params) {
                     <div className="accordion-item border-b-2 p-5">
                         <input type="checkbox" id="accordion4" />
                         <div className='flex justify-between '>
-                            <label for="accordion4" className="accordion-item-title lg:text-xl text-lg"><span className="icon"></span>{params.q4}</label>
+                            <label for="accordion4" className="accordion-item-title lg:text-xl text-sm"><span className="icon"></span>{params.q4}</label>
                             <MdKeyboardArrowDown className='text-3xl  ' />
                         </div>
                         <div className="accordion-item-desc lg:text-xl text-sm ">{params.a4}</div>
@@ -76,7 +76,7 @@ export default function FAQ(params) {
                     <div className="accordion-item border-b-2 p-5">
                         <input type="checkbox" id="accordion5" />
                         <div className='flex justify-between '>
-                            <label for="accordion5" className="accordion-item-title lg:text-xl text-lg"><span className="icon"></span>{params.q5}</label>
+                            <label for="accordion5" className="accordion-item-title lg:text-xl text-sm"><span className="icon"></span>{params.q5}</label>
                             <MdKeyboardArrowDown className='text-3xl  ' />
                         </div>
                         <div className="accordion-item-desc lg:text-xl text-sm">{params.a5}</div>

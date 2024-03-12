@@ -37,7 +37,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Google Ads Agency"
+      maindesc = "Maximizing Google Ads: Tailoring Compelling Content and Targeting Strategies for Effective Audience Engagement."
+      />
       <Proven
        title1 = "Proven Google Ads Tactics"
        desc1 = "Discover a collection of proven Google advertising tactics, meticulously designed and backed by data. These strategies are tailored to enhance your brand visibility on Google and drive tangible results for your business."

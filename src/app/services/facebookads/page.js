@@ -43,7 +43,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Facebook Ads Agency"
+      maindesc = "Maximizing Facebook Ads: Crafting Compelling Content and Targeting Strategies for Effective Audience Engagement."
+      />
       <Proven
         title1="Effective Facebook Ad Strategies"
         desc1="Unlock the power of effective Facebook advertising strategies tailored to your business goals. Our data-driven approach ensures your ads reach the right audience, driving engagement and conversions."

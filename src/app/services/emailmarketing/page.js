@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Email Marketing Agency"
+      maindesc = "Optimizing Email Marketing: Seamlessly Integrating Persuasive Content with Strategic Timing for Enhanced Subscriber Engagement."
+      />
       <Proven
   title1="Proven YouTube Ad Tactics"
   desc1="Discover a collection of proven YouTube advertising tactics, meticulously designed and backed by data. These strategies are tailored to enhance your brand visibility on YouTube and drive tangible results for your business."

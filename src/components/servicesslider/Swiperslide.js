@@ -31,7 +31,7 @@ const Myslider = (params) => {
         // install Swiper modules
         modules={[A11y]}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={1}
         breakpoints={breakpoints}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}

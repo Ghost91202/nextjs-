@@ -22,7 +22,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best LinkedIn Marketing Agency"
+      maindesc = "Empowering LinkedIn Marketing: Leveraging Data-Driven Strategies with Professional Engagement for Enhanced Brand Visibility."
+      />
       <Proven 
       desc1="Discover our array of proven digital marketing tactics, supported by data-driven insights, designed to propel your business to success in the online realm."
 

@@ -46,7 +46,9 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Bing Ads Agency"
+      maindesc = "Mastering Bing Ads: Uniting Engaging Content with Strategic Placement for Targeted Audience Reach." />
       <Proven
         title1="Strategic Bing Ads Campaigns"
         desc1="Unlock the power of strategic Bing Ads campaigns meticulously crafted and informed by data-driven insights. Our approach is tailored to boost your online visibility and generate tangible results for your business."

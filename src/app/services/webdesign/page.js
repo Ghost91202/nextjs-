@@ -45,7 +45,9 @@ export default function Home() {
     <div ClassName="flex flex-col ">
       <Navbar />
       <Banner
-      mainheading='The India&apos;s Best Web Design Agency'
+      mainhead=' Best Web Design Agency'
+      maindesc = "Revolutionizing Web Design: Fusing Creative Vision with User-Centric Experience for Stunning Online Presence."
+
        />
        <Proven
         title1="Skilled Developers"

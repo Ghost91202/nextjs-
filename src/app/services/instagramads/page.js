@@ -23,7 +23,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Instagram Ads Agency"
+      maindesc = "Elevating Instagram Ads: Crafting Captivating Content and Targeting Strategies for Enhanced Audience Engagement."
+      />
       <Proven
      title1 = "Proven Instagram Ad Tactics"
      desc1 = "Discover a collection of proven Instagram advertising tactics, meticulously designed and backed by data. These strategies are tailored to enhance your brand visibility on Instagram and drive tangible results for your business."

@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Javascript Devlopment Agency"
+      maindesc = "Advancing JavaScript Development: Integrating Cutting-Edge Techniques with Efficient Coding Practices for Seamless Application Development."
+      />
       <Proven
     title1="Proven Solutions"
     desc1="Discover a collection of proven JavaScript development strategies, meticulously designed and backed by industry expertise. Our solutions are tailored to strengthen your digital projects and deliver tangible results for your business."

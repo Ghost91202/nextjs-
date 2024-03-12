@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = " Best Conversion Rate Optimisation Agency"
+      maindesc = "Perfecting Conversion Rate Optimization: Integrating Data-Driven Strategies with User-Centric Design for Enhanced Customer Engagement."
+      />
       <Proven
   title1="Proven Optimization Tactics"
   desc1="Explore a collection of proven conversion rate optimization (CRO) strategies, meticulously designed and backed by data. These tactics are tailored to enhance your website's performance and drive tangible results for your business."

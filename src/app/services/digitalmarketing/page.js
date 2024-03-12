@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Digital Marketing Agency"
+      maindesc = "Revolutionizing Digital Marketing: Blending Innovative Strategies with Targeted Campaigns for Unparalleled Audience Engagement."
+      />
       <Proven
   title1="Proven Digital Marketing Strategies"
   desc1="Explore a collection of proven digital marketing tactics meticulously designed and backed by data. Our strategies are tailored to fortify your online presence and drive tangible results for your business."

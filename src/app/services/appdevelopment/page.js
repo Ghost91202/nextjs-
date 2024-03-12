@@ -47,7 +47,11 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      
+      mainhead=" Best App Development Agency"
+      maindesc = "Developing Apps That Thrive: Merge Stunning Design with Enhanced Visibility on App Stores for Optimal Market Success."
+      />
       <Proven
   title1="Proven App Development Strategies"
   desc1="Explore a collection of proven app development tactics, meticulously designed and backed by data. These strategies are tailored to fortify your app's functionality and user experience, driving tangible results for your business."

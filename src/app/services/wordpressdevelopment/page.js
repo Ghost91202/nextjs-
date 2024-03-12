@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Wordpress Deevelopment Agency"
+      maindesc = "Empowering WordPress Development: Integrating Custom Solutions with User-Centric Design for Seamless Website Creation."
+      />
       <Proven
   title1="Proven WordPress Solutions"
   desc1="Discover a range of proven strategies specifically tailored for WordPress development. Our meticulous approach, backed by data, is designed to fortify your online presence and deliver tangible results for your business."

@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best Landing Page Optimisation Agency"
+      maindesc = "Enhancing Landing Page Optimization: Implementing Data-Driven Strategies with User-Centric Design for Improved Conversion Rates."
+       />
       <Proven
     title1="Proven Techniques"
     desc1="Discover a range of proven landing page optimization tactics, meticulously designed and backed by data. These techniques are tailored to strengthen your online presence and drive tangible results for your business."

@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = "Best SEO Agency"
+      maindesc = "Maximizing SEO: Integrating Data-Driven Strategies with Content Excellence for Enhanced Online Visibility."
+       />
       <Proven
   title1="Effective SEO Techniques"
   desc1="Discover a range of tried-and-true SEO techniques, meticulously crafted and supported by data-driven insights. These strategies are customized to enhance your online visibility and generate measurable outcomes for your business."

@@ -73,7 +73,7 @@ const Strategy = () => {
           </div>
         </div>
         <div className=" w-fit">
-          <button className="text-white text-xl py-4 px-10 border hover:bg-blue-800 hover:border-red-700">Let&apos;s Connect</button>
+          <button className="text-white text-xl py-4 px-10 border hover:bg-red-700 hover:border-red-700 transition-all duration-150">Let&apos;s Connect</button>
         </div>
       </div>
 

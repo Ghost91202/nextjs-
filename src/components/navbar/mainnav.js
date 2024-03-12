@@ -27,7 +27,7 @@ const Navbar = () => {
             <nav
                 className={`bg-${scrolled ? "white" : "transparent"} dark:bg-${scrolled ? "white" : "transparent"} fixed w-full z-20 top-0 start-0`}
             >
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
                     <Link
                         href="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse" >
@@ -35,14 +35,14 @@ const Navbar = () => {
                             Pie Bond
                         </span>
                     </Link>
-                    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
                          <Drawer className="text-blue-600  z-50 relative" />
 
                     </div>
                     <div
                         className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-sticky" >
-                        <ul className="flex flex-col justify-items-center  space-b text-xl p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+                        <ul className="flex flex-col  justify-items-center  space-b text-xl p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                             <li>
                                 <Link
                                     href="#"
@@ -53,7 +53,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Button
-                                    title="services"
+                                    title="Services"
                                     menu1="App Development"
                                     link1="/services/appdevelopment"
                                     // desc1="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
@@ -87,7 +87,7 @@ const Navbar = () => {
                                     menu11="Landing Page Optimization"
                                     link11="/services/landingpageoptimization"
                                     // desc11="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
-                                    menu12="Linkedin Marketing"
+                                    menu12="LinkedIn Marketing"
                                     link12="/services/linkedinmarketing"
                                     // desc12="Achieve long-term growth in organic traffic, qualified leads, and pipeline with performance content and SEO."
                                     menu13="Marketing Consultation"
@@ -111,14 +111,14 @@ const Navbar = () => {
                                     />
 
                             </li>
-                            <li>
-                                {/* <Link
+                            {/* <li>
+                                <Link
                                     href="#"
                                     className={`block py-2 px-3 ${scrolled ? "text-black" : "text-white"} rounded  md:hover:bg-transparent  md:p-0   `}
                                 >
                                     Services
-                                </Link> */}
-                            </li>
+                                </Link>
+                            </li> */}
                             <li>
                                 <Link
                                     href="#"

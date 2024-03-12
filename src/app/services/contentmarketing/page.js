@@ -47,7 +47,10 @@ export default function Home() {
   return (
     <div ClassName="flex flex-col ">
       <Navbar />
-      <Banner />
+      <Banner
+      mainhead = " Best Content Marketing Agency"
+      maindesc = "Elevating Content Marketing: Fusing Compelling Narratives with Strategic Distribution for Maximum Audience Impact."
+       />
       <Proven
   title1="Proven Content Strategies"
   desc1="Explore a collection of proven content marketing tactics, meticulously designed and backed by data. These strategies are tailored to fortify your online presence and drive tangible results for your business."
