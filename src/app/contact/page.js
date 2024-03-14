@@ -12,7 +12,7 @@ export default function Contactus() {
     <div className="h-max pb-10 bg-gray-300 lg:flex xl:justify-around pt-16">
       <div className="p-4">
         <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold pb-5 py-2 xl:pt-20 pt-10 2xl:text-8xl">
-          Let's work <div className="text-gray-600">— together.</div>
+          Let&apos;s work <div className="text-gray-600">— together.</div>
         </div>
       </div>
       <div className="form-box  xl:w-1/2 xl:py-10">
