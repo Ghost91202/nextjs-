@@ -100,7 +100,7 @@ export default function Contactus() {
     <div className="bg-black py-16 px-5 xl:py-20">
         <div className="text-white text-2xl xl:text-4xl xl:w-1/2 xl:px-10 leading-8 ">
           Feel free to reach out to us via email for <span className="text-gray-500">Business collaborations</span> or
-          <span className="text-gray-500"> career opportunities</span> at <div className="underline py-12">piebond.agency</div>
+          <span className="text-gray-500"> career opportunities</span> at <div className="underline py-12"><a href='mailto:piebondtech@gmail.com'>piebondtech@gmail.com</a></div>
         </div>
        <div className="p-2 xl:px-10 xl:pb-8"> <button className='bg-yellow-400 text-gray-700 text-lg font-semibold  py-2 px-10 rounded'>Positions</button></div>
       </div>
